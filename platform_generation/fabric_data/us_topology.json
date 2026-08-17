@@ -1,0 +1,529 @@
+{
+  "sites": {
+    "MICH": {
+      "lat": 42.2931086,
+      "lon": -83.7101319,
+      "addr": "2530 Draper Dr,Ann Arbor, MI 48109",
+      "cores_cap": 384,
+      "cores_avail": 250
+    },
+    "GATECH": {
+      "lat": 33.7753991,
+      "lon": -84.3875488,
+      "addr": "760 West Peachtree Street NW,Atlanta, GA\u00a0 30308",
+      "cores_cap": 640,
+      "cores_avail": 344
+    },
+    "TACC": {
+      "lat": 30.3899405,
+      "lon": -97.7261807,
+      "addr": "10100 Burnet Rd,Austin, TX 78758",
+      "cores_cap": 640,
+      "cores_avail": 116
+    },
+    "UTAH": {
+      "lat": 40.7503666,
+      "lon": -111.893838,
+      "addr": "875 South West Temple,Salt Lake City, UT\u00a0 84101",
+      "cores_cap": 640,
+      "cores_avail": 148
+    },
+    "WASH": {
+      "lat": 38.9208836,
+      "lon": -77.2111974,
+      "addr": "1755 Old Meadow Road, 22102",
+      "cores_cap": 384,
+      "cores_avail": 250
+    },
+    "SEAT": {
+      "lat": 47.6143548,
+      "lon": -122.3388637,
+      "addr": "2001 6th Ave,Seattle, WA 98121",
+      "cores_cap": 256,
+      "cores_avail": 70
+    },
+    "PSC": {
+      "lat": 40.4343887,
+      "lon": -79.750207,
+      "addr": "4350 Northern Pike,Monroeville, PA 15146",
+      "cores_cap": 384,
+      "cores_avail": 46
+    },
+    "DALL": {
+      "lat": 32.7990816,
+      "lon": -96.8206903,
+      "addr": "1950 N Stemmons Fwy,Dallas TX 75207",
+      "cores_cap": 384,
+      "cores_avail": 130
+    },
+    "EDUKY": {
+      "lat": 38.0325,
+      "lon": -84.502801,
+      "addr": "301 Hilltop Avenue,Lexington, KY 40506",
+      "cores_cap": 73728,
+      "cores_avail": 73512
+    },
+    "GPN": {
+      "lat": 39.0342627,
+      "lon": -94.5826075,
+      "addr": "5115 Oak Street,Kansas City,MO 64112",
+      "cores_cap": 640,
+      "cores_avail": 252
+    },
+    "UCSD": {
+      "lat": 32.8886802,
+      "lon": -117.239324,
+      "addr": "10100 Hopkins Drive,CA 92093",
+      "cores_cap": 640,
+      "cores_avail": 182
+    },
+    "STAR": {
+      "lat": 42.2359989,
+      "lon": -88.1575427,
+      "addr": "710 North Lakeshore Drive,\u00a060611",
+      "cores_cap": 768,
+      "cores_avail": 204
+    },
+    "HAWI": {
+      "lat": 21.2989762,
+      "lon": -157.8163991,
+      "addr": "2520 Correa Road,Honolulu, Hi 96822",
+      "cores_cap": 640,
+      "cores_avail": 438
+    },
+    "SRI": {
+      "lat": 37.4566052,
+      "lon": -122.174686,
+      "addr": "333 Ravenswood Avenue,Menlo Park, CA 94025",
+      "cores_cap": 384,
+      "cores_avail": 148
+    },
+    "NEWY": {
+      "lat": 40.7383575,
+      "lon": -73.9992012,
+      "addr": "32 Sixth Avenue,New York, NY 10013",
+      "cores_cap": 256,
+      "cores_avail": 110
+    },
+    "PRIN": {
+      "lat": 40.3461201,
+      "lon": -74.616073,
+      "addr": " 151, Forrestal Road, Plainsboro Township, Middlesex County, New Jersey, 08537",
+      "cores_cap": 384,
+      "cores_avail": 276
+    },
+    "INDI": {
+      "lat": 39.7737312,
+      "lon": -86.1674868,
+      "addr": "535 West Michigan Street,Indianapolis, IN 46202",
+      "cores_cap": 384,
+      "cores_avail": 56
+    },
+    "EDC": {
+      "lat": 40.09584,
+      "lon": -88.2415369,
+      "addr": "1725 S Oak St.,Champaign, IL 61820",
+      "cores_cap": 256,
+      "cores_avail": 70
+    },
+    "LOSA": {
+      "lat": 34.0490803,
+      "lon": -118.259534,
+      "addr": "818 West 7th Street,Los Angeles, CA 90017",
+      "cores_cap": 384,
+      "cores_avail": 36
+    },
+    "KANS": {
+      "lat": 39.1004885,
+      "lon": -94.5823448,
+      "addr": "1100 Walnut Street,Kansas City,MO 64106",
+      "cores_cap": 384,
+      "cores_avail": 80
+    },
+    "SALT": {
+      "lat": 40.7570751,
+      "lon": -111.9534664,
+      "addr": "572 Delong Street,Salt Lake City, UT 84104",
+      "cores_cap": 384,
+      "cores_avail": 102
+    },
+    "NCSA": {
+      "lat": 40.09584,
+      "lon": -88.2415369,
+      "addr": "1725 S Oak St.,Champaign, IL 61820",
+      "cores_cap": 384,
+      "cores_avail": 62
+    },
+    "RUTG": {
+      "lat": 40.5224962,
+      "lon": -74.4405719,
+      "addr": "120 Avenue E,Piscataway, New Jersey",
+      "cores_cap": 640,
+      "cores_avail": 170
+    },
+    "MAX": {
+      "lat": 38.9886345,
+      "lon": -76.9434794,
+      "addr": "4161 Fieldhouse Drive,College Park,MD 20742",
+      "cores_cap": 640,
+      "cores_avail": 480
+    },
+    "CLEM": {
+      "lat": 34.5865435,
+      "lon": -82.8212889,
+      "addr": "340 Computer Court,Anderson,SC 29625",
+      "cores_cap": 384,
+      "cores_avail": 160
+    },
+    "ATLA": {
+      "lat": 33.758551,
+      "lon": -84.387703,
+      "addr": "180 Peachtree,Atlanta, GA 30303",
+      "cores_cap": 256,
+      "cores_avail": 180
+    },
+    "FIU": {
+      "lat": 25.7542948,
+      "lon": -80.3702894,
+      "addr": "11001 SW 14th St,Miami,FL 33199",
+      "cores_cap": 640,
+      "cores_avail": 330
+    },
+    "MASS": {
+      "lat": 42.202493,
+      "lon": -72.6078766,
+      "addr": "100 Bigelow Street,Holyoke, MA 01040",
+      "cores_cap": 384,
+      "cores_avail": 108
+    }
+  },
+  "links": [
+    {
+      "a": "DALL",
+      "b": "LOSA",
+      "gbps": 1200,
+      "layer": "L1",
+      "avail": 960,
+      "km": 1990.8,
+      "floor_ms": 9.75
+    },
+    {
+      "a": "NEWY",
+      "b": "STAR",
+      "gbps": 1200,
+      "layer": "L1",
+      "avail": 960,
+      "km": 1189.6,
+      "floor_ms": 5.826
+    },
+    {
+      "a": "NEWY",
+      "b": "WASH",
+      "gbps": 1200,
+      "layer": "L1",
+      "avail": 960,
+      "km": 340.7,
+      "floor_ms": 1.668
+    },
+    {
+      "a": "ATLA",
+      "b": "WASH",
+      "gbps": 1200,
+      "layer": "L1",
+      "avail": 960,
+      "km": 861.3,
+      "floor_ms": 4.218
+    },
+    {
+      "a": "ATLA",
+      "b": "DALL",
+      "gbps": 1200,
+      "layer": "L1",
+      "avail": 960,
+      "km": 1160.0,
+      "floor_ms": 5.681
+    },
+    {
+      "a": "SALT",
+      "b": "STAR",
+      "gbps": 1200,
+      "layer": "L1",
+      "avail": 960,
+      "km": 1982.2,
+      "floor_ms": 9.707
+    },
+    {
+      "a": "LOSA",
+      "b": "SALT",
+      "gbps": 1200,
+      "layer": "L1",
+      "avail": 960,
+      "km": 930.3,
+      "floor_ms": 4.556
+    },
+    {
+      "a": "DALL",
+      "b": "KANS",
+      "gbps": 100,
+      "layer": "L1",
+      "avail": 80,
+      "km": 729.0,
+      "floor_ms": 3.57
+    },
+    {
+      "a": "GPN",
+      "b": "KANS",
+      "gbps": 100,
+      "layer": "L1",
+      "avail": 80,
+      "km": 7.4,
+      "floor_ms": 0.036
+    },
+    {
+      "a": "INDI",
+      "b": "STAR",
+      "gbps": 100,
+      "layer": "L1",
+      "avail": 80,
+      "km": 320.7,
+      "floor_ms": 1.57
+    },
+    {
+      "a": "MICH",
+      "b": "STAR",
+      "gbps": 100,
+      "layer": "L1",
+      "avail": 80,
+      "km": 366.0,
+      "floor_ms": 1.792
+    },
+    {
+      "a": "KANS",
+      "b": "SALT",
+      "gbps": 100,
+      "layer": "L1",
+      "avail": 80,
+      "km": 1490.1,
+      "floor_ms": 7.298
+    },
+    {
+      "a": "KANS",
+      "b": "STAR",
+      "gbps": 100,
+      "layer": "L1",
+      "avail": 80,
+      "km": 644.1,
+      "floor_ms": 3.154
+    },
+    {
+      "a": "MASS",
+      "b": "NEWY",
+      "gbps": 100,
+      "layer": "L2",
+      "avail": 80,
+      "km": 199.9,
+      "floor_ms": 0.979
+    },
+    {
+      "a": "NEWY",
+      "b": "PRIN",
+      "gbps": 100,
+      "layer": "L1",
+      "avail": 80,
+      "km": 68.0,
+      "floor_ms": 0.333
+    },
+    {
+      "a": "NEWY",
+      "b": "RUTG",
+      "gbps": 100,
+      "layer": "L1",
+      "avail": 80,
+      "km": 44.3,
+      "floor_ms": 0.217
+    },
+    {
+      "a": "NCSA",
+      "b": "STAR",
+      "gbps": 100,
+      "layer": "L1",
+      "avail": 80,
+      "km": 238.1,
+      "floor_ms": 1.166
+    },
+    {
+      "a": "ATLA",
+      "b": "FIU",
+      "gbps": 100,
+      "layer": "L1",
+      "avail": 80,
+      "km": 970.6,
+      "floor_ms": 4.753
+    },
+    {
+      "a": "ATLA",
+      "b": "STAR",
+      "gbps": 100,
+      "layer": "L1",
+      "avail": 80,
+      "km": 998.6,
+      "floor_ms": 4.89
+    },
+    {
+      "a": "SALT",
+      "b": "UTAH",
+      "gbps": 100,
+      "layer": "L1",
+      "avail": 80,
+      "km": 5.1,
+      "floor_ms": 0.025
+    },
+    {
+      "a": "SALT",
+      "b": "SEAT",
+      "gbps": 100,
+      "layer": "L1",
+      "avail": 80,
+      "km": 1123.9,
+      "floor_ms": 5.504
+    },
+    {
+      "a": "LOSA",
+      "b": "UCSD",
+      "gbps": 100,
+      "layer": "L1",
+      "avail": 80,
+      "km": 160.0,
+      "floor_ms": 0.784
+    },
+    {
+      "a": "LOSA",
+      "b": "SEAT",
+      "gbps": 100,
+      "layer": "L1",
+      "avail": 80,
+      "km": 1546.4,
+      "floor_ms": 7.573
+    },
+    {
+      "a": "STAR",
+      "b": "WASH",
+      "gbps": 100,
+      "layer": "L1",
+      "avail": 80,
+      "km": 994.3,
+      "floor_ms": 4.87
+    },
+    {
+      "a": "HAWI",
+      "b": "SEAT",
+      "gbps": 40,
+      "layer": "L2",
+      "avail": 32,
+      "km": 4310.1,
+      "floor_ms": 21.108
+    },
+    {
+      "a": "HAWI",
+      "b": "LOSA",
+      "gbps": 40,
+      "layer": "L2",
+      "avail": 32,
+      "km": 4115.1,
+      "floor_ms": 20.153
+    },
+    {
+      "a": "CLEM",
+      "b": "WASH",
+      "gbps": 40,
+      "layer": "L2",
+      "avail": 80,
+      "km": 694.0,
+      "floor_ms": 3.399
+    },
+    {
+      "a": "PSC",
+      "b": "WASH",
+      "gbps": 40,
+      "layer": "L2",
+      "avail": 32,
+      "km": 274.8,
+      "floor_ms": 1.346
+    },
+    {
+      "a": "MAX",
+      "b": "WASH",
+      "gbps": 40,
+      "layer": "L2",
+      "avail": 32,
+      "km": 24.3,
+      "floor_ms": 0.119
+    },
+    {
+      "a": "EDUKY",
+      "b": "STAR",
+      "gbps": 10,
+      "layer": "L2",
+      "avail": 8,
+      "km": 561.1,
+      "floor_ms": 2.748
+    },
+    {
+      "a": "GATECH",
+      "b": "WASH",
+      "gbps": 10,
+      "layer": "L2",
+      "avail": 8,
+      "km": 860.0,
+      "floor_ms": 4.212
+    },
+    {
+      "a": "LOSA",
+      "b": "SRI",
+      "gbps": 10,
+      "layer": "L2",
+      "avail": 8,
+      "km": 518.0,
+      "floor_ms": 2.537
+    },
+    {
+      "a": "STAR",
+      "b": "TACC",
+      "gbps": 10,
+      "layer": "L2",
+      "avail": 8,
+      "km": 1569.3,
+      "floor_ms": 7.685
+    }
+  ],
+  "degree": {
+    "MICH": 1,
+    "GATECH": 1,
+    "TACC": 1,
+    "UTAH": 1,
+    "WASH": 7,
+    "SEAT": 3,
+    "PSC": 1,
+    "DALL": 3,
+    "EDUKY": 1,
+    "GPN": 1,
+    "UCSD": 1,
+    "STAR": 10,
+    "HAWI": 2,
+    "SRI": 1,
+    "NEWY": 5,
+    "PRIN": 1,
+    "INDI": 1,
+    "EDC": 0,
+    "LOSA": 6,
+    "KANS": 4,
+    "SALT": 5,
+    "NCSA": 1,
+    "RUTG": 1,
+    "MAX": 1,
+    "CLEM": 1,
+    "ATLA": 4,
+    "FIU": 1,
+    "MASS": 1
+  }
+}

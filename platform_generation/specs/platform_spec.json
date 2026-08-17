@@ -1,0 +1,156 @@
+{
+  "test_mode": {
+  "enabled": true,
+  "clusters_per_facility": 2,
+  "nodes_per_cluster": 4,
+  "node_profile": "standard",
+  "facility_fabric_oversubscription": 1
+},
+
+  "schema_version": "1.0",
+  "seed": 42,
+  "facility_classes": {
+    "small": {
+      "weight": 0.25,
+      "cluster_count": {
+        "distribution": "choice",
+        "values": [1],
+        "weights": [1.0]
+      },
+      "cluster_node_count": {
+        "distribution": "uniform_int",
+        "min": 128,
+        "max": 512
+      },
+      "facility_fabric_oversubscription": {
+        "distribution": "choice",
+        "values": [2, 4],
+        "weights": [0.4, 0.6]
+      }
+    },
+    "medium": {
+      "weight": 0.40,
+      "cluster_count": {
+        "distribution": "choice",
+        "values": [1, 2],
+        "weights": [0.4, 0.6]
+      },
+      "cluster_node_count": {
+        "distribution": "uniform_int",
+        "min": 384,
+        "max": 1200
+      },
+      "facility_fabric_oversubscription": {
+        "distribution": "choice",
+        "values": [2, 4, 8],
+        "weights": [0.2, 0.6, 0.2]
+      }
+    },
+    "large": {
+      "weight": 0.25,
+      "cluster_count": {
+        "distribution": "choice",
+        "values": [2, 3],
+        "weights": [0.4, 0.6]
+      },
+      "cluster_node_count": {
+        "distribution": "uniform_int",
+        "min": 800,
+        "max": 2500
+      },
+      "facility_fabric_oversubscription": {
+        "distribution": "choice",
+        "values": [4, 8],
+        "weights": [0.6, 0.4]
+      }
+    },
+    "leadership": {
+      "weight": 0.10,
+      "cluster_count": {
+        "distribution": "choice",
+        "values": [3, 4, 5],
+        "weights": [0.3, 0.5, 0.2]
+      },
+      "cluster_node_count": {
+        "distribution": "uniform_int",
+        "min": 1500,
+        "max": 4500
+      },
+      "facility_fabric_oversubscription": {
+        "distribution": "choice",
+        "values": [4, 8],
+        "weights": [0.7, 0.3]
+      }
+    }
+  },
+  "node_profiles": {
+    "standard": {
+    "weight": 0.5,
+    "speed": "8Gf",
+    "cores": 64,
+    "memory_gb": 256,
+    "type": "HPC",
+    "has_gpu": false,
+    "network_interconnect": "Ethernet",
+    "private_link_bandwidth_gbps": 100,
+    "private_link_latency_us": 2,
+    "cluster_oversubscription": 32
+  },
+    "dense": {
+      "weight": 0.30,
+      "cores": 128,
+      "speed": "10Gf",
+      "memory_gb": 512,
+      "type": "HPC",
+      "has_gpu": false,
+      "network_interconnect": "InfiniBand",
+      "private_link_bandwidth_gbps": 200,
+      "private_link_latency_us": 1.5,
+      "cluster_oversubscription": 32
+    },
+    "memory_rich": {
+      "weight": 0.20,
+      "cores": 64,
+      "speed": "9Gf",
+      "memory_gb": 1024,
+      "type": "HPC",
+      "has_gpu": false,
+      "network_interconnect": "InfiniBand",
+      "private_link_bandwidth_gbps": 200,
+      "private_link_latency_us": 1.5,
+      "cluster_oversubscription": 16
+    }
+  },
+  "loopback": {
+    "bandwidth_gbps": 1000,
+    "latency_us": 0.1
+  },
+  "facility_network": {
+    "latency_us": 5.0
+  },
+  "storage": {
+    "enabled": false,
+    "type": "JBOD",
+    "capacity_tb_per_compute_node": {
+      "distribution": "uniform",
+      "min": 1.0,
+      "max": 4.0
+    },
+    "disk_profiles": {
+      "capacity": {
+        "weight": 0.70,
+        "disk_capacity_tb": 16.0,
+        "read_bandwidth_gbps": 2.0,
+        "write_bandwidth_gbps": 1.6
+      },
+      "performance": {
+        "weight": 0.30,
+        "disk_capacity_tb": 8.0,
+        "read_bandwidth_gbps": 16.0,
+        "write_bandwidth_gbps": 12.0
+      }
+    },
+    "server_speed": "10Gf",
+    "filesystem_mount_point": "/pfs/"
+  }
+}

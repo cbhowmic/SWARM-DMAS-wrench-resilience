@@ -1,0 +1,114 @@
+{
+  "CLEM__WASH": {
+    "min_rtt_ms": 16.369,
+    "one_way_ms": 8.1845,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "CLEM"
+  },
+  "FIU__ATLA": {
+    "min_rtt_ms": 12.565,
+    "one_way_ms": 6.2825,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "FIU"
+  },
+  "GATECH__WASH": {
+    "min_rtt_ms": 13.993,
+    "one_way_ms": 6.9965,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "GATECH"
+  },
+  "GPN__KANS": {
+    "min_rtt_ms": 0.275,
+    "one_way_ms": 0.1375,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "GPN"
+  },
+  "HAWI__LOSA": {
+    "min_rtt_ms": 49.123,
+    "one_way_ms": 24.5615,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "HAWI"
+  },
+  "HAWI__SEAT": {
+    "min_rtt_ms": 73.023,
+    "one_way_ms": 36.5115,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "HAWI"
+  },
+  "INDI__STAR": {
+    "min_rtt_ms": 4.628,
+    "one_way_ms": 2.314,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "INDI"
+  },
+  "MAX__WASH": {
+    "min_rtt_ms": 1.741,
+    "one_way_ms": 0.8705,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "MAX"
+  },
+  "MICH__STAR": {
+    "min_rtt_ms": 5.099,
+    "one_way_ms": 2.5495,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "MICH"
+  },
+  "NCSA__STAR": {
+    "min_rtt_ms": 2.469,
+    "one_way_ms": 1.2345,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "NCSA"
+  },
+  "PRIN__NEWY": {
+    "min_rtt_ms": 1.334,
+    "one_way_ms": 0.667,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "PRIN"
+  },
+  "PSC__WASH": {
+    "min_rtt_ms": 6.133,
+    "one_way_ms": 3.0665,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "PSC"
+  },
+  "RUTG__NEWY": {
+    "min_rtt_ms": 1.025,
+    "one_way_ms": 0.5125,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "RUTG"
+  },
+  "SRI__LOSA": {
+    "min_rtt_ms": 8.137,
+    "one_way_ms": 4.0685,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "SRI"
+  },
+  "UCSD__LOSA": {
+    "min_rtt_ms": 2.297,
+    "one_way_ms": 1.1485,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "UCSD"
+  },
+  "UTAH__SALT": {
+    "min_rtt_ms": 0.214,
+    "one_way_ms": 0.107,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "UTAH"
+  }
+}

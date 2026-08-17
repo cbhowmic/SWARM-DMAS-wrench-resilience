@@ -1,0 +1,506 @@
+{
+  "ATLA__DALL": {
+    "min_rtt_ms": 16.682,
+    "one_way_ms": 8.341,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "ATLA"
+  },
+  "ATLA__KANS": {
+    "min_rtt_ms": 25.719,
+    "one_way_ms": 12.8595,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "ATLA"
+  },
+  "ATLA__LOSA": {
+    "min_rtt_ms": 51.618,
+    "one_way_ms": 25.809,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "ATLA"
+  },
+  "ATLA__NEWY": {
+    "min_rtt_ms": 17.762,
+    "one_way_ms": 8.881,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "ATLA"
+  },
+  "ATLA__SALT": {
+    "min_rtt_ms": 54.651,
+    "one_way_ms": 27.3255,
+    "reply_ttl": 60,
+    "sites_on_path": 4,
+    "src": "ATLA"
+  },
+  "ATLA__SEAT": {
+    "min_rtt_ms": 76.1,
+    "one_way_ms": 38.05,
+    "reply_ttl": 60,
+    "sites_on_path": 4,
+    "src": "ATLA"
+  },
+  "ATLA__STAR": {
+    "min_rtt_ms": 39.553,
+    "one_way_ms": 19.7765,
+    "reply_ttl": 60,
+    "sites_on_path": 4,
+    "src": "ATLA"
+  },
+  "ATLA__WASH": {
+    "min_rtt_ms": 12.736,
+    "one_way_ms": 6.368,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "ATLA"
+  },
+  "DALL__ATLA": {
+    "min_rtt_ms": 16.678,
+    "one_way_ms": 8.339,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "DALL"
+  },
+  "DALL__KANS": {
+    "min_rtt_ms": 9.077,
+    "one_way_ms": 4.5385,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "DALL"
+  },
+  "DALL__LOSA": {
+    "min_rtt_ms": 34.989,
+    "one_way_ms": 17.4945,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "DALL"
+  },
+  "DALL__NEWY": {
+    "min_rtt_ms": 41.838,
+    "one_way_ms": 20.919,
+    "reply_ttl": 60,
+    "sites_on_path": 4,
+    "src": "DALL"
+  },
+  "DALL__SALT": {
+    "min_rtt_ms": 38.023,
+    "one_way_ms": 19.0115,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "DALL"
+  },
+  "DALL__SEAT": {
+    "min_rtt_ms": 59.463,
+    "one_way_ms": 29.7315,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "DALL"
+  },
+  "DALL__STAR": {
+    "min_rtt_ms": 20.0,
+    "one_way_ms": 10.0,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "DALL"
+  },
+  "DALL__WASH": {
+    "min_rtt_ms": 29.343,
+    "one_way_ms": 14.6715,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "DALL"
+  },
+  "KANS__ATLA": {
+    "min_rtt_ms": 25.707,
+    "one_way_ms": 12.8535,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "KANS"
+  },
+  "KANS__DALL": {
+    "min_rtt_ms": 9.093,
+    "one_way_ms": 4.5465,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "KANS"
+  },
+  "KANS__LOSA": {
+    "min_rtt_ms": 38.032,
+    "one_way_ms": 19.016,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "KANS"
+  },
+  "KANS__NEWY": {
+    "min_rtt_ms": 32.826,
+    "one_way_ms": 16.413,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "KANS"
+  },
+  "KANS__SALT": {
+    "min_rtt_ms": 19.859,
+    "one_way_ms": 9.9295,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "KANS"
+  },
+  "KANS__SEAT": {
+    "min_rtt_ms": 68.506,
+    "one_way_ms": 34.253,
+    "reply_ttl": 60,
+    "sites_on_path": 4,
+    "src": "KANS"
+  },
+  "KANS__STAR": {
+    "min_rtt_ms": 10.997,
+    "one_way_ms": 5.4985,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "KANS"
+  },
+  "KANS__WASH": {
+    "min_rtt_ms": 38.38,
+    "one_way_ms": 19.19,
+    "reply_ttl": 60,
+    "sites_on_path": 4,
+    "src": "KANS"
+  },
+  "LOSA__ATLA": {
+    "min_rtt_ms": 51.621,
+    "one_way_ms": 25.8105,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "LOSA"
+  },
+  "LOSA__DALL": {
+    "min_rtt_ms": 34.995,
+    "one_way_ms": 17.4975,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "LOSA"
+  },
+  "LOSA__KANS": {
+    "min_rtt_ms": 38.029,
+    "one_way_ms": 19.0145,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "LOSA"
+  },
+  "LOSA__NEWY": {
+    "min_rtt_ms": 64.729,
+    "one_way_ms": 32.3645,
+    "reply_ttl": 60,
+    "sites_on_path": 4,
+    "src": "LOSA"
+  },
+  "LOSA__SALT": {
+    "min_rtt_ms": 12.242,
+    "one_way_ms": 6.121,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "LOSA"
+  },
+  "LOSA__SEAT": {
+    "min_rtt_ms": 24.557,
+    "one_way_ms": 12.2785,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "LOSA"
+  },
+  "LOSA__STAR": {
+    "min_rtt_ms": 42.916,
+    "one_way_ms": 21.458,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "LOSA"
+  },
+  "LOSA__WASH": {
+    "min_rtt_ms": 64.271,
+    "one_way_ms": 32.1355,
+    "reply_ttl": 60,
+    "sites_on_path": 4,
+    "src": "LOSA"
+  },
+  "NEWY__ATLA": {
+    "min_rtt_ms": 17.75,
+    "one_way_ms": 8.875,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "NEWY"
+  },
+  "NEWY__DALL": {
+    "min_rtt_ms": 41.836,
+    "one_way_ms": 20.918,
+    "reply_ttl": 60,
+    "sites_on_path": 4,
+    "src": "NEWY"
+  },
+  "NEWY__KANS": {
+    "min_rtt_ms": 32.834,
+    "one_way_ms": 16.417,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "NEWY"
+  },
+  "NEWY__LOSA": {
+    "min_rtt_ms": 64.724,
+    "one_way_ms": 32.362,
+    "reply_ttl": 60,
+    "sites_on_path": 4,
+    "src": "NEWY"
+  },
+  "NEWY__SALT": {
+    "min_rtt_ms": 52.557,
+    "one_way_ms": 26.2785,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "NEWY"
+  },
+  "NEWY__SEAT": {
+    "min_rtt_ms": 89.204,
+    "one_way_ms": 44.602,
+    "reply_ttl": 59,
+    "sites_on_path": 5,
+    "src": "NEWY"
+  },
+  "NEWY__STAR": {
+    "min_rtt_ms": 21.878,
+    "one_way_ms": 10.939,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "NEWY"
+  },
+  "NEWY__WASH": {
+    "min_rtt_ms": 5.083,
+    "one_way_ms": 2.5415,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "NEWY"
+  },
+  "SALT__ATLA": {
+    "min_rtt_ms": 54.666,
+    "one_way_ms": 27.333,
+    "reply_ttl": 60,
+    "sites_on_path": 4,
+    "src": "SALT"
+  },
+  "SALT__DALL": {
+    "min_rtt_ms": 38.014,
+    "one_way_ms": 19.007,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "SALT"
+  },
+  "SALT__KANS": {
+    "min_rtt_ms": 19.861,
+    "one_way_ms": 9.9305,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "SALT"
+  },
+  "SALT__LOSA": {
+    "min_rtt_ms": 12.234,
+    "one_way_ms": 6.117,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "SALT"
+  },
+  "SALT__NEWY": {
+    "min_rtt_ms": 52.563,
+    "one_way_ms": 26.2815,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "SALT"
+  },
+  "SALT__SEAT": {
+    "min_rtt_ms": 36.738,
+    "one_way_ms": 18.369,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "SALT"
+  },
+  "SALT__STAR": {
+    "min_rtt_ms": 30.748,
+    "one_way_ms": 15.374,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "SALT"
+  },
+  "SALT__WASH": {
+    "min_rtt_ms": 57.537,
+    "one_way_ms": 28.7685,
+    "reply_ttl": 60,
+    "sites_on_path": 4,
+    "src": "SALT"
+  },
+  "SEAT__ATLA": {
+    "min_rtt_ms": 76.089,
+    "one_way_ms": 38.0445,
+    "reply_ttl": 60,
+    "sites_on_path": 4,
+    "src": "SEAT"
+  },
+  "SEAT__DALL": {
+    "min_rtt_ms": 59.469,
+    "one_way_ms": 29.7345,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "SEAT"
+  },
+  "SEAT__KANS": {
+    "min_rtt_ms": 68.49,
+    "one_way_ms": 34.245,
+    "reply_ttl": 60,
+    "sites_on_path": 4,
+    "src": "SEAT"
+  },
+  "SEAT__LOSA": {
+    "min_rtt_ms": 24.553,
+    "one_way_ms": 12.2765,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "SEAT"
+  },
+  "SEAT__NEWY": {
+    "min_rtt_ms": 89.201,
+    "one_way_ms": 44.6005,
+    "reply_ttl": 59,
+    "sites_on_path": 5,
+    "src": "SEAT"
+  },
+  "SEAT__SALT": {
+    "min_rtt_ms": 36.736,
+    "one_way_ms": 18.368,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "SEAT"
+  },
+  "SEAT__STAR": {
+    "min_rtt_ms": 67.401,
+    "one_way_ms": 33.7005,
+    "reply_ttl": 60,
+    "sites_on_path": 4,
+    "src": "SEAT"
+  },
+  "SEAT__WASH": {
+    "min_rtt_ms": 88.754,
+    "one_way_ms": 44.377,
+    "reply_ttl": 59,
+    "sites_on_path": 5,
+    "src": "SEAT"
+  },
+  "STAR__ATLA": {
+    "min_rtt_ms": 39.546,
+    "one_way_ms": 19.773,
+    "reply_ttl": 60,
+    "sites_on_path": 4,
+    "src": "STAR"
+  },
+  "STAR__DALL": {
+    "min_rtt_ms": 20.001,
+    "one_way_ms": 10.0005,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "STAR"
+  },
+  "STAR__KANS": {
+    "min_rtt_ms": 10.988,
+    "one_way_ms": 5.494,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "STAR"
+  },
+  "STAR__LOSA": {
+    "min_rtt_ms": 42.918,
+    "one_way_ms": 21.459,
+    "reply_ttl": 60,
+    "sites_on_path": 4,
+    "src": "STAR"
+  },
+  "STAR__NEWY": {
+    "min_rtt_ms": 21.88,
+    "one_way_ms": 10.94,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "STAR"
+  },
+  "STAR__SALT": {
+    "min_rtt_ms": 30.75,
+    "one_way_ms": 15.375,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "STAR"
+  },
+  "STAR__SEAT": {
+    "min_rtt_ms": 67.393,
+    "one_way_ms": 33.6965,
+    "reply_ttl": 59,
+    "sites_on_path": 5,
+    "src": "STAR"
+  },
+  "STAR__WASH": {
+    "min_rtt_ms": 26.877,
+    "one_way_ms": 13.4385,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "STAR"
+  },
+  "WASH__ATLA": {
+    "min_rtt_ms": 12.739,
+    "one_way_ms": 6.3695,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "WASH"
+  },
+  "WASH__DALL": {
+    "min_rtt_ms": 29.339,
+    "one_way_ms": 14.6695,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "WASH"
+  },
+  "WASH__KANS": {
+    "min_rtt_ms": 38.38,
+    "one_way_ms": 19.19,
+    "reply_ttl": 60,
+    "sites_on_path": 4,
+    "src": "WASH"
+  },
+  "WASH__LOSA": {
+    "min_rtt_ms": 64.272,
+    "one_way_ms": 32.136,
+    "reply_ttl": 60,
+    "sites_on_path": 4,
+    "src": "WASH"
+  },
+  "WASH__NEWY": {
+    "min_rtt_ms": 5.072,
+    "one_way_ms": 2.536,
+    "reply_ttl": 62,
+    "sites_on_path": 2,
+    "src": "WASH"
+  },
+  "WASH__SALT": {
+    "min_rtt_ms": 57.535,
+    "one_way_ms": 28.7675,
+    "reply_ttl": 60,
+    "sites_on_path": 4,
+    "src": "WASH"
+  },
+  "WASH__SEAT": {
+    "min_rtt_ms": 88.744,
+    "one_way_ms": 44.372,
+    "reply_ttl": 59,
+    "sites_on_path": 5,
+    "src": "WASH"
+  },
+  "WASH__STAR": {
+    "min_rtt_ms": 26.882,
+    "one_way_ms": 13.441,
+    "reply_ttl": 61,
+    "sites_on_path": 3,
+    "src": "WASH"
+  }
+}

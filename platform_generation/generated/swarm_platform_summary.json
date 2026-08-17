@@ -1,0 +1,909 @@
+{
+  "seed": 42,
+  "facility_count": 28,
+  "cluster_count": 56,
+  "compute_node_count": 224,
+  "facility_class_counts": {
+    "test": 28
+  },
+  "facilities": [
+    {
+      "facility": "ATLA",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "ATLA_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "ATLA_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "CLEM",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "CLEM_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "CLEM_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "DALL",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "DALL_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "DALL_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "EDC",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "EDC_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "EDC_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "EDUKY",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "EDUKY_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "EDUKY_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "FIU",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "FIU_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "FIU_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "GATECH",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "GATECH_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "GATECH_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "GPN",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "GPN_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "GPN_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "HAWI",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "HAWI_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "HAWI_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "INDI",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "INDI_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "INDI_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "KANS",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "KANS_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "KANS_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "LOSA",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "LOSA_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "LOSA_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "MASS",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "MASS_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "MASS_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "MAX",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "MAX_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "MAX_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "MICH",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "MICH_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "MICH_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "NCSA",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "NCSA_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "NCSA_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "NEWY",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "NEWY_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "NEWY_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "PRIN",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "PRIN_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "PRIN_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "PSC",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "PSC_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "PSC_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "RUTG",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "RUTG_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "RUTG_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "SALT",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "SALT_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "SALT_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "SEAT",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "SEAT_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "SEAT_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "SRI",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "SRI_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "SRI_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "STAR",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "STAR_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "STAR_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "TACC",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "TACC_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "TACC_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "UCSD",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "UCSD_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "UCSD_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "UTAH",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "UTAH_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "UTAH_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    },
+    {
+      "facility": "WASH",
+      "facility_class": "test",
+      "cluster_count": 2,
+      "total_nodes": 8,
+      "clusters": [
+        {
+          "name": "WASH_0",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        },
+        {
+          "name": "WASH_1",
+          "nodes": 4,
+          "profile": "standard",
+          "cores_per_node": 64,
+          "memory_gb_per_node": 256.0,
+          "node_bandwidth_gbps": 100.0,
+          "backbone_bandwidth_gbps": 12.5
+        }
+      ],
+      "facility_fabric_bandwidth_gbps": 25.0,
+      "storage": {
+        "enabled": false
+      }
+    }
+  ],
+  "cluster_to_facility": {
+    "ATLA_0": "ATLA",
+    "ATLA_1": "ATLA",
+    "CLEM_0": "CLEM",
+    "CLEM_1": "CLEM",
+    "DALL_0": "DALL",
+    "DALL_1": "DALL",
+    "EDC_0": "EDC",
+    "EDC_1": "EDC",
+    "EDUKY_0": "EDUKY",
+    "EDUKY_1": "EDUKY",
+    "FIU_0": "FIU",
+    "FIU_1": "FIU",
+    "GATECH_0": "GATECH",
+    "GATECH_1": "GATECH",
+    "GPN_0": "GPN",
+    "GPN_1": "GPN",
+    "HAWI_0": "HAWI",
+    "HAWI_1": "HAWI",
+    "INDI_0": "INDI",
+    "INDI_1": "INDI",
+    "KANS_0": "KANS",
+    "KANS_1": "KANS",
+    "LOSA_0": "LOSA",
+    "LOSA_1": "LOSA",
+    "MASS_0": "MASS",
+    "MASS_1": "MASS",
+    "MAX_0": "MAX",
+    "MAX_1": "MAX",
+    "MICH_0": "MICH",
+    "MICH_1": "MICH",
+    "NCSA_0": "NCSA",
+    "NCSA_1": "NCSA",
+    "NEWY_0": "NEWY",
+    "NEWY_1": "NEWY",
+    "PRIN_0": "PRIN",
+    "PRIN_1": "PRIN",
+    "PSC_0": "PSC",
+    "PSC_1": "PSC",
+    "RUTG_0": "RUTG",
+    "RUTG_1": "RUTG",
+    "SALT_0": "SALT",
+    "SALT_1": "SALT",
+    "SEAT_0": "SEAT",
+    "SEAT_1": "SEAT",
+    "SRI_0": "SRI",
+    "SRI_1": "SRI",
+    "STAR_0": "STAR",
+    "STAR_1": "STAR",
+    "TACC_0": "TACC",
+    "TACC_1": "TACC",
+    "UCSD_0": "UCSD",
+    "UCSD_1": "UCSD",
+    "UTAH_0": "UTAH",
+    "UTAH_1": "UTAH",
+    "WASH_0": "WASH",
+    "WASH_1": "WASH"
+  }
+}

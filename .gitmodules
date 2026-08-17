@@ -1,0 +1,3 @@
+[submodule "external/SimGrid-JSON-platform-loader"]
+	path = external/SimGrid-JSON-platform-loader
+	url = https://github.com/frs69wq/SimGrid-JSON-platform-loader.git

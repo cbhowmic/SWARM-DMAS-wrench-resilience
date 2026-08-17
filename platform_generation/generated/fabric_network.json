@@ -1,0 +1,7378 @@
+{
+  "schema_version": "1.0",
+  "name": "FABRIC-US-network",
+  "description": "Intermediate SWARM network description derived from the NRTWsim FABRIC platform investigation. Compute clusters, site storage, and filesystems are intentionally left empty for later synthetic specification.",
+  "generated_utc": "2026-08-10T14:46:25.844482+00:00",
+  "provenance": {
+    "source_repository": "NRTWsim",
+    "source_directory": "investigations/platform-files",
+    "site_and_physical_link_source": "us_topology.json",
+    "latency_and_hop_source": [
+      "matrix_fab-backbone.json",
+      "matrix_fab-leaves.json"
+    ],
+    "routing_method": "Same measured-path reconstruction and leaf composition logic as 05_emit_platform.py",
+    "bandwidth_semantics": "Nominal FABRIC link bandwidth from list_links-derived topology; not measured throughput.",
+    "latency_semantics": "One-way latency is min RTT / 2 when measured; a small number of uplinks are estimated; EDC-NCSA is modeled as colocated.",
+    "compute_metadata_policy": "FABRIC cores_capacity/cores_available are intentionally excluded because SWARM compute clusters will be synthetic."
+  },
+  "sites": [
+    {
+      "name": "ATLA",
+      "address": "180 Peachtree,Atlanta, GA 30303",
+      "location": {
+        "latitude": 33.758551,
+        "longitude": -84.387703
+      },
+      "network": {
+        "role": "core",
+        "degree_in_modeled_fabnet_graph": 3
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "CLEM",
+      "address": "340 Computer Court,Anderson,SC 29625",
+      "location": {
+        "latitude": 34.5865435,
+        "longitude": -82.8212889
+      },
+      "network": {
+        "role": "edge",
+        "degree_in_modeled_fabnet_graph": 1
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "DALL",
+      "address": "1950 N Stemmons Fwy,Dallas TX 75207",
+      "location": {
+        "latitude": 32.7990816,
+        "longitude": -96.8206903
+      },
+      "network": {
+        "role": "core",
+        "degree_in_modeled_fabnet_graph": 3
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "EDC",
+      "address": "1725 S Oak St.,Champaign, IL 61820",
+      "location": {
+        "latitude": 40.09584,
+        "longitude": -88.2415369
+      },
+      "network": {
+        "role": "edge",
+        "degree_in_modeled_fabnet_graph": 1
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "EDUKY",
+      "address": "301 Hilltop Avenue,Lexington, KY 40506",
+      "location": {
+        "latitude": 38.0325,
+        "longitude": -84.502801
+      },
+      "network": {
+        "role": "edge",
+        "degree_in_modeled_fabnet_graph": 1
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "FIU",
+      "address": "11001 SW 14th St,Miami,FL 33199",
+      "location": {
+        "latitude": 25.7542948,
+        "longitude": -80.3702894
+      },
+      "network": {
+        "role": "edge",
+        "degree_in_modeled_fabnet_graph": 1
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "GATECH",
+      "address": "760 West Peachtree Street NW,Atlanta, GA\u00a0 30308",
+      "location": {
+        "latitude": 33.7753991,
+        "longitude": -84.3875488
+      },
+      "network": {
+        "role": "edge",
+        "degree_in_modeled_fabnet_graph": 1
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "GPN",
+      "address": "5115 Oak Street,Kansas City,MO 64112",
+      "location": {
+        "latitude": 39.0342627,
+        "longitude": -94.5826075
+      },
+      "network": {
+        "role": "edge",
+        "degree_in_modeled_fabnet_graph": 1
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "HAWI",
+      "address": "2520 Correa Road,Honolulu, Hi 96822",
+      "location": {
+        "latitude": 21.2989762,
+        "longitude": -157.8163991
+      },
+      "network": {
+        "role": "edge",
+        "degree_in_modeled_fabnet_graph": 2
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "INDI",
+      "address": "535 West Michigan Street,Indianapolis, IN 46202",
+      "location": {
+        "latitude": 39.7737312,
+        "longitude": -86.1674868
+      },
+      "network": {
+        "role": "edge",
+        "degree_in_modeled_fabnet_graph": 1
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "KANS",
+      "address": "1100 Walnut Street,Kansas City,MO 64106",
+      "location": {
+        "latitude": 39.1004885,
+        "longitude": -94.5823448
+      },
+      "network": {
+        "role": "core",
+        "degree_in_modeled_fabnet_graph": 4
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "LOSA",
+      "address": "818 West 7th Street,Los Angeles, CA 90017",
+      "location": {
+        "latitude": 34.0490803,
+        "longitude": -118.259534
+      },
+      "network": {
+        "role": "core",
+        "degree_in_modeled_fabnet_graph": 6
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "MASS",
+      "address": "100 Bigelow Street,Holyoke, MA 01040",
+      "location": {
+        "latitude": 42.202493,
+        "longitude": -72.6078766
+      },
+      "network": {
+        "role": "edge",
+        "degree_in_modeled_fabnet_graph": 1
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "MAX",
+      "address": "4161 Fieldhouse Drive,College Park,MD 20742",
+      "location": {
+        "latitude": 38.9886345,
+        "longitude": -76.9434794
+      },
+      "network": {
+        "role": "edge",
+        "degree_in_modeled_fabnet_graph": 1
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "MICH",
+      "address": "2530 Draper Dr,Ann Arbor, MI 48109",
+      "location": {
+        "latitude": 42.2931086,
+        "longitude": -83.7101319
+      },
+      "network": {
+        "role": "edge",
+        "degree_in_modeled_fabnet_graph": 1
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "NCSA",
+      "address": "1725 S Oak St.,Champaign, IL 61820",
+      "location": {
+        "latitude": 40.09584,
+        "longitude": -88.2415369
+      },
+      "network": {
+        "role": "edge",
+        "degree_in_modeled_fabnet_graph": 2
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "NEWY",
+      "address": "32 Sixth Avenue,New York, NY 10013",
+      "location": {
+        "latitude": 40.7383575,
+        "longitude": -73.9992012
+      },
+      "network": {
+        "role": "core",
+        "degree_in_modeled_fabnet_graph": 5
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "PRIN",
+      "address": " 151, Forrestal Road, Plainsboro Township, Middlesex County, New Jersey, 08537",
+      "location": {
+        "latitude": 40.3461201,
+        "longitude": -74.616073
+      },
+      "network": {
+        "role": "edge",
+        "degree_in_modeled_fabnet_graph": 1
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "PSC",
+      "address": "4350 Northern Pike,Monroeville, PA 15146",
+      "location": {
+        "latitude": 40.4343887,
+        "longitude": -79.750207
+      },
+      "network": {
+        "role": "edge",
+        "degree_in_modeled_fabnet_graph": 1
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "RUTG",
+      "address": "120 Avenue E,Piscataway, New Jersey",
+      "location": {
+        "latitude": 40.5224962,
+        "longitude": -74.4405719
+      },
+      "network": {
+        "role": "edge",
+        "degree_in_modeled_fabnet_graph": 1
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "SALT",
+      "address": "572 Delong Street,Salt Lake City, UT 84104",
+      "location": {
+        "latitude": 40.7570751,
+        "longitude": -111.9534664
+      },
+      "network": {
+        "role": "core",
+        "degree_in_modeled_fabnet_graph": 4
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "SEAT",
+      "address": "2001 6th Ave,Seattle, WA 98121",
+      "location": {
+        "latitude": 47.6143548,
+        "longitude": -122.3388637
+      },
+      "network": {
+        "role": "core",
+        "degree_in_modeled_fabnet_graph": 2
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "SRI",
+      "address": "333 Ravenswood Avenue,Menlo Park, CA 94025",
+      "location": {
+        "latitude": 37.4566052,
+        "longitude": -122.174686
+      },
+      "network": {
+        "role": "edge",
+        "degree_in_modeled_fabnet_graph": 1
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "STAR",
+      "address": "710 North Lakeshore Drive,\u00a060611",
+      "location": {
+        "latitude": 42.2359989,
+        "longitude": -88.1575427
+      },
+      "network": {
+        "role": "core",
+        "degree_in_modeled_fabnet_graph": 8
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "TACC",
+      "address": "10100 Burnet Rd,Austin, TX 78758",
+      "location": {
+        "latitude": 30.3899405,
+        "longitude": -97.7261807
+      },
+      "network": {
+        "role": "edge",
+        "degree_in_modeled_fabnet_graph": 1
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "UCSD",
+      "address": "10100 Hopkins Drive,CA 92093",
+      "location": {
+        "latitude": 32.8886802,
+        "longitude": -117.239324
+      },
+      "network": {
+        "role": "edge",
+        "degree_in_modeled_fabnet_graph": 1
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "UTAH",
+      "address": "875 South West Temple,Salt Lake City, UT\u00a0 84101",
+      "location": {
+        "latitude": 40.7503666,
+        "longitude": -111.893838
+      },
+      "network": {
+        "role": "edge",
+        "degree_in_modeled_fabnet_graph": 1
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    },
+    {
+      "name": "WASH",
+      "address": "1755 Old Meadow Road, 22102",
+      "location": {
+        "latitude": 38.9208836,
+        "longitude": -77.2111974
+      },
+      "network": {
+        "role": "core",
+        "degree_in_modeled_fabnet_graph": 6
+      },
+      "storage_systems": [],
+      "filesystems": [],
+      "clusters": []
+    }
+  ],
+  "links": [
+    {
+      "name": "ATLA__DALL",
+      "source": "ATLA",
+      "destination": "DALL",
+      "bandwidth_gbps": 1200,
+      "latency_ms": 8.341,
+      "latency_source": "measured",
+      "physical_layer": "L1",
+      "great_circle_distance_km": 1160.0,
+      "theoretical_fiber_floor_ms": 5.681
+    },
+    {
+      "name": "ATLA__FIU",
+      "source": "ATLA",
+      "destination": "FIU",
+      "bandwidth_gbps": 100,
+      "latency_ms": 6.2825,
+      "latency_source": "measured",
+      "physical_layer": "L1",
+      "great_circle_distance_km": 970.6,
+      "theoretical_fiber_floor_ms": 4.753
+    },
+    {
+      "name": "ATLA__WASH",
+      "source": "ATLA",
+      "destination": "WASH",
+      "bandwidth_gbps": 1200,
+      "latency_ms": 6.368,
+      "latency_source": "measured",
+      "physical_layer": "L1",
+      "great_circle_distance_km": 861.3,
+      "theoretical_fiber_floor_ms": 4.218
+    },
+    {
+      "name": "CLEM__WASH",
+      "source": "CLEM",
+      "destination": "WASH",
+      "bandwidth_gbps": 40,
+      "latency_ms": 8.1845,
+      "latency_source": "measured",
+      "physical_layer": "L2",
+      "great_circle_distance_km": 694.0,
+      "theoretical_fiber_floor_ms": 3.399
+    },
+    {
+      "name": "DALL__KANS",
+      "source": "DALL",
+      "destination": "KANS",
+      "bandwidth_gbps": 100,
+      "latency_ms": 4.5385,
+      "latency_source": "measured",
+      "physical_layer": "L1",
+      "great_circle_distance_km": 729.0,
+      "theoretical_fiber_floor_ms": 3.57
+    },
+    {
+      "name": "DALL__LOSA",
+      "source": "DALL",
+      "destination": "LOSA",
+      "bandwidth_gbps": 1200,
+      "latency_ms": 17.4945,
+      "latency_source": "measured",
+      "physical_layer": "L1",
+      "great_circle_distance_km": 1990.8,
+      "theoretical_fiber_floor_ms": 9.75
+    },
+    {
+      "name": "EDC__NCSA",
+      "source": "EDC",
+      "destination": "NCSA",
+      "bandwidth_gbps": 100,
+      "latency_ms": 0.05,
+      "latency_source": "colocated",
+      "physical_layer": "synthetic-local",
+      "great_circle_distance_km": 0.0,
+      "theoretical_fiber_floor_ms": 0.0
+    },
+    {
+      "name": "EDUKY__STAR",
+      "source": "EDUKY",
+      "destination": "STAR",
+      "bandwidth_gbps": 10,
+      "latency_ms": 3.9846,
+      "latency_source": "estimated",
+      "physical_layer": "L2",
+      "great_circle_distance_km": 561.1,
+      "theoretical_fiber_floor_ms": 2.748
+    },
+    {
+      "name": "GATECH__WASH",
+      "source": "GATECH",
+      "destination": "WASH",
+      "bandwidth_gbps": 10,
+      "latency_ms": 6.9965,
+      "latency_source": "measured",
+      "physical_layer": "L2",
+      "great_circle_distance_km": 860.0,
+      "theoretical_fiber_floor_ms": 4.212
+    },
+    {
+      "name": "GPN__KANS",
+      "source": "GPN",
+      "destination": "KANS",
+      "bandwidth_gbps": 100,
+      "latency_ms": 0.1375,
+      "latency_source": "measured",
+      "physical_layer": "L1",
+      "great_circle_distance_km": 7.4,
+      "theoretical_fiber_floor_ms": 0.036
+    },
+    {
+      "name": "HAWI__LOSA",
+      "source": "HAWI",
+      "destination": "LOSA",
+      "bandwidth_gbps": 40,
+      "latency_ms": 24.5615,
+      "latency_source": "measured",
+      "physical_layer": "L2",
+      "great_circle_distance_km": 4115.1,
+      "theoretical_fiber_floor_ms": 20.153
+    },
+    {
+      "name": "HAWI__SEAT",
+      "source": "HAWI",
+      "destination": "SEAT",
+      "bandwidth_gbps": 40,
+      "latency_ms": 36.5115,
+      "latency_source": "measured",
+      "physical_layer": "L2",
+      "great_circle_distance_km": 4310.1,
+      "theoretical_fiber_floor_ms": 21.108
+    },
+    {
+      "name": "INDI__STAR",
+      "source": "INDI",
+      "destination": "STAR",
+      "bandwidth_gbps": 100,
+      "latency_ms": 2.314,
+      "latency_source": "measured",
+      "physical_layer": "L1",
+      "great_circle_distance_km": 320.7,
+      "theoretical_fiber_floor_ms": 1.57
+    },
+    {
+      "name": "KANS__SALT",
+      "source": "KANS",
+      "destination": "SALT",
+      "bandwidth_gbps": 100,
+      "latency_ms": 9.9295,
+      "latency_source": "measured",
+      "physical_layer": "L1",
+      "great_circle_distance_km": 1490.1,
+      "theoretical_fiber_floor_ms": 7.298
+    },
+    {
+      "name": "KANS__STAR",
+      "source": "KANS",
+      "destination": "STAR",
+      "bandwidth_gbps": 100,
+      "latency_ms": 5.4985,
+      "latency_source": "measured",
+      "physical_layer": "L1",
+      "great_circle_distance_km": 644.1,
+      "theoretical_fiber_floor_ms": 3.154
+    },
+    {
+      "name": "LOSA__SALT",
+      "source": "LOSA",
+      "destination": "SALT",
+      "bandwidth_gbps": 1200,
+      "latency_ms": 6.121,
+      "latency_source": "measured",
+      "physical_layer": "L1",
+      "great_circle_distance_km": 930.3,
+      "theoretical_fiber_floor_ms": 4.556
+    },
+    {
+      "name": "LOSA__SEAT",
+      "source": "LOSA",
+      "destination": "SEAT",
+      "bandwidth_gbps": 100,
+      "latency_ms": 12.2785,
+      "latency_source": "measured",
+      "physical_layer": "L1",
+      "great_circle_distance_km": 1546.4,
+      "theoretical_fiber_floor_ms": 7.573
+    },
+    {
+      "name": "LOSA__SRI",
+      "source": "LOSA",
+      "destination": "SRI",
+      "bandwidth_gbps": 10,
+      "latency_ms": 4.0685,
+      "latency_source": "measured",
+      "physical_layer": "L2",
+      "great_circle_distance_km": 518.0,
+      "theoretical_fiber_floor_ms": 2.537
+    },
+    {
+      "name": "LOSA__UCSD",
+      "source": "LOSA",
+      "destination": "UCSD",
+      "bandwidth_gbps": 100,
+      "latency_ms": 1.1485,
+      "latency_source": "measured",
+      "physical_layer": "L1",
+      "great_circle_distance_km": 160.0,
+      "theoretical_fiber_floor_ms": 0.784
+    },
+    {
+      "name": "MASS__NEWY",
+      "source": "MASS",
+      "destination": "NEWY",
+      "bandwidth_gbps": 100,
+      "latency_ms": 1.4195,
+      "latency_source": "estimated",
+      "physical_layer": "L2",
+      "great_circle_distance_km": 199.9,
+      "theoretical_fiber_floor_ms": 0.979
+    },
+    {
+      "name": "MAX__WASH",
+      "source": "MAX",
+      "destination": "WASH",
+      "bandwidth_gbps": 40,
+      "latency_ms": 0.8705,
+      "latency_source": "measured",
+      "physical_layer": "L2",
+      "great_circle_distance_km": 24.3,
+      "theoretical_fiber_floor_ms": 0.119
+    },
+    {
+      "name": "MICH__STAR",
+      "source": "MICH",
+      "destination": "STAR",
+      "bandwidth_gbps": 100,
+      "latency_ms": 2.5495,
+      "latency_source": "measured",
+      "physical_layer": "L1",
+      "great_circle_distance_km": 366.0,
+      "theoretical_fiber_floor_ms": 1.792
+    },
+    {
+      "name": "NCSA__STAR",
+      "source": "NCSA",
+      "destination": "STAR",
+      "bandwidth_gbps": 100,
+      "latency_ms": 1.2345,
+      "latency_source": "measured",
+      "physical_layer": "L1",
+      "great_circle_distance_km": 238.1,
+      "theoretical_fiber_floor_ms": 1.166
+    },
+    {
+      "name": "NEWY__PRIN",
+      "source": "NEWY",
+      "destination": "PRIN",
+      "bandwidth_gbps": 100,
+      "latency_ms": 0.667,
+      "latency_source": "measured",
+      "physical_layer": "L1",
+      "great_circle_distance_km": 68.0,
+      "theoretical_fiber_floor_ms": 0.333
+    },
+    {
+      "name": "NEWY__RUTG",
+      "source": "NEWY",
+      "destination": "RUTG",
+      "bandwidth_gbps": 100,
+      "latency_ms": 0.5125,
+      "latency_source": "measured",
+      "physical_layer": "L1",
+      "great_circle_distance_km": 44.3,
+      "theoretical_fiber_floor_ms": 0.217
+    },
+    {
+      "name": "NEWY__STAR",
+      "source": "NEWY",
+      "destination": "STAR",
+      "bandwidth_gbps": 1200,
+      "latency_ms": 10.939,
+      "latency_source": "measured",
+      "physical_layer": "L1",
+      "great_circle_distance_km": 1189.6,
+      "theoretical_fiber_floor_ms": 5.826
+    },
+    {
+      "name": "NEWY__WASH",
+      "source": "NEWY",
+      "destination": "WASH",
+      "bandwidth_gbps": 1200,
+      "latency_ms": 2.5415,
+      "latency_source": "measured",
+      "physical_layer": "L1",
+      "great_circle_distance_km": 340.7,
+      "theoretical_fiber_floor_ms": 1.668
+    },
+    {
+      "name": "PSC__WASH",
+      "source": "PSC",
+      "destination": "WASH",
+      "bandwidth_gbps": 40,
+      "latency_ms": 3.0665,
+      "latency_source": "measured",
+      "physical_layer": "L2",
+      "great_circle_distance_km": 274.8,
+      "theoretical_fiber_floor_ms": 1.346
+    },
+    {
+      "name": "SALT__STAR",
+      "source": "SALT",
+      "destination": "STAR",
+      "bandwidth_gbps": 1200,
+      "latency_ms": 15.374,
+      "latency_source": "measured",
+      "physical_layer": "L1",
+      "great_circle_distance_km": 1982.2,
+      "theoretical_fiber_floor_ms": 9.707
+    },
+    {
+      "name": "SALT__UTAH",
+      "source": "SALT",
+      "destination": "UTAH",
+      "bandwidth_gbps": 100,
+      "latency_ms": 0.107,
+      "latency_source": "measured",
+      "physical_layer": "L1",
+      "great_circle_distance_km": 5.1,
+      "theoretical_fiber_floor_ms": 0.025
+    },
+    {
+      "name": "STAR__TACC",
+      "source": "STAR",
+      "destination": "TACC",
+      "bandwidth_gbps": 10,
+      "latency_ms": 11.1432,
+      "latency_source": "estimated",
+      "physical_layer": "L2",
+      "great_circle_distance_km": 1569.3,
+      "theoretical_fiber_floor_ms": 7.685
+    }
+  ],
+  "routes": [
+    {
+      "source": "ATLA",
+      "destination": "CLEM",
+      "site_path": [
+        "ATLA",
+        "WASH",
+        "CLEM"
+      ],
+      "links": [
+        "ATLA__WASH",
+        "CLEM__WASH"
+      ],
+      "modeled_one_way_latency_ms": 14.5525,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "DALL",
+      "site_path": [
+        "ATLA",
+        "DALL"
+      ],
+      "links": [
+        "ATLA__DALL"
+      ],
+      "modeled_one_way_latency_ms": 8.341,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "EDC",
+      "site_path": [
+        "ATLA",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "NCSA",
+        "EDC"
+      ],
+      "links": [
+        "ATLA__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "NCSA__STAR",
+        "EDC__NCSA"
+      ],
+      "modeled_one_way_latency_ms": 21.133,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "EDUKY",
+      "site_path": [
+        "ATLA",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "EDUKY"
+      ],
+      "links": [
+        "ATLA__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "EDUKY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 23.8331,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "FIU",
+      "site_path": [
+        "ATLA",
+        "FIU"
+      ],
+      "links": [
+        "ATLA__FIU"
+      ],
+      "modeled_one_way_latency_ms": 6.2825,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "GATECH",
+      "site_path": [
+        "ATLA",
+        "WASH",
+        "GATECH"
+      ],
+      "links": [
+        "ATLA__WASH",
+        "GATECH__WASH"
+      ],
+      "modeled_one_way_latency_ms": 13.3645,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "GPN",
+      "site_path": [
+        "ATLA",
+        "DALL",
+        "KANS",
+        "GPN"
+      ],
+      "links": [
+        "ATLA__DALL",
+        "DALL__KANS",
+        "GPN__KANS"
+      ],
+      "modeled_one_way_latency_ms": 13.017,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "HAWI",
+      "site_path": [
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "HAWI"
+      ],
+      "links": [
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "HAWI__LOSA"
+      ],
+      "modeled_one_way_latency_ms": 50.397,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "INDI",
+      "site_path": [
+        "ATLA",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "INDI"
+      ],
+      "links": [
+        "ATLA__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "INDI__STAR"
+      ],
+      "modeled_one_way_latency_ms": 22.1625,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "KANS",
+      "site_path": [
+        "ATLA",
+        "DALL",
+        "KANS"
+      ],
+      "links": [
+        "ATLA__DALL",
+        "DALL__KANS"
+      ],
+      "modeled_one_way_latency_ms": 12.8795,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "LOSA",
+      "site_path": [
+        "ATLA",
+        "DALL",
+        "LOSA"
+      ],
+      "links": [
+        "ATLA__DALL",
+        "DALL__LOSA"
+      ],
+      "modeled_one_way_latency_ms": 25.8355,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "MASS",
+      "site_path": [
+        "ATLA",
+        "WASH",
+        "NEWY",
+        "MASS"
+      ],
+      "links": [
+        "ATLA__WASH",
+        "NEWY__WASH",
+        "MASS__NEWY"
+      ],
+      "modeled_one_way_latency_ms": 10.329,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "MAX",
+      "site_path": [
+        "ATLA",
+        "WASH",
+        "MAX"
+      ],
+      "links": [
+        "ATLA__WASH",
+        "MAX__WASH"
+      ],
+      "modeled_one_way_latency_ms": 7.2385,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "MICH",
+      "site_path": [
+        "ATLA",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "MICH"
+      ],
+      "links": [
+        "ATLA__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "MICH__STAR"
+      ],
+      "modeled_one_way_latency_ms": 22.398,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "NCSA",
+      "site_path": [
+        "ATLA",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "NCSA"
+      ],
+      "links": [
+        "ATLA__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "NCSA__STAR"
+      ],
+      "modeled_one_way_latency_ms": 21.083,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "NEWY",
+      "site_path": [
+        "ATLA",
+        "WASH",
+        "NEWY"
+      ],
+      "links": [
+        "ATLA__WASH",
+        "NEWY__WASH"
+      ],
+      "modeled_one_way_latency_ms": 8.9095,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "PRIN",
+      "site_path": [
+        "ATLA",
+        "WASH",
+        "NEWY",
+        "PRIN"
+      ],
+      "links": [
+        "ATLA__WASH",
+        "NEWY__WASH",
+        "NEWY__PRIN"
+      ],
+      "modeled_one_way_latency_ms": 9.5765,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "PSC",
+      "site_path": [
+        "ATLA",
+        "WASH",
+        "PSC"
+      ],
+      "links": [
+        "ATLA__WASH",
+        "PSC__WASH"
+      ],
+      "modeled_one_way_latency_ms": 9.4345,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "RUTG",
+      "site_path": [
+        "ATLA",
+        "WASH",
+        "NEWY",
+        "RUTG"
+      ],
+      "links": [
+        "ATLA__WASH",
+        "NEWY__WASH",
+        "NEWY__RUTG"
+      ],
+      "modeled_one_way_latency_ms": 9.422,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "SALT",
+      "site_path": [
+        "ATLA",
+        "DALL",
+        "KANS",
+        "SALT"
+      ],
+      "links": [
+        "ATLA__DALL",
+        "DALL__KANS",
+        "KANS__SALT"
+      ],
+      "modeled_one_way_latency_ms": 22.809,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "SEAT",
+      "site_path": [
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "SEAT"
+      ],
+      "links": [
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "LOSA__SEAT"
+      ],
+      "modeled_one_way_latency_ms": 38.114,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "SRI",
+      "site_path": [
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 29.904,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "STAR",
+      "site_path": [
+        "ATLA",
+        "WASH",
+        "NEWY",
+        "STAR"
+      ],
+      "links": [
+        "ATLA__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 19.8485,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "TACC",
+      "site_path": [
+        "ATLA",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "ATLA__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 30.9917,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "UCSD",
+      "site_path": [
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 26.984,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "UTAH",
+      "site_path": [
+        "ATLA",
+        "DALL",
+        "KANS",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "ATLA__DALL",
+        "DALL__KANS",
+        "KANS__SALT",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 22.916,
+      "symmetric": true
+    },
+    {
+      "source": "ATLA",
+      "destination": "WASH",
+      "site_path": [
+        "ATLA",
+        "WASH"
+      ],
+      "links": [
+        "ATLA__WASH"
+      ],
+      "modeled_one_way_latency_ms": 6.368,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "DALL",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "ATLA",
+        "DALL"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "ATLA__WASH",
+        "ATLA__DALL"
+      ],
+      "modeled_one_way_latency_ms": 22.8935,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "EDC",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "NCSA",
+        "EDC"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "NCSA__STAR",
+        "EDC__NCSA"
+      ],
+      "modeled_one_way_latency_ms": 22.9495,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "EDUKY",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "EDUKY"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "EDUKY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 25.6496,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "FIU",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "ATLA",
+        "FIU"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "ATLA__WASH",
+        "ATLA__FIU"
+      ],
+      "modeled_one_way_latency_ms": 20.835,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "GATECH",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "GATECH"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "GATECH__WASH"
+      ],
+      "modeled_one_way_latency_ms": 15.181,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "GPN",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "ATLA",
+        "DALL",
+        "KANS",
+        "GPN"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "ATLA__WASH",
+        "ATLA__DALL",
+        "DALL__KANS",
+        "GPN__KANS"
+      ],
+      "modeled_one_way_latency_ms": 27.5695,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "HAWI",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "HAWI"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "ATLA__WASH",
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "HAWI__LOSA"
+      ],
+      "modeled_one_way_latency_ms": 64.9495,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "INDI",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "INDI"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "INDI__STAR"
+      ],
+      "modeled_one_way_latency_ms": 23.979,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "KANS",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "ATLA",
+        "DALL",
+        "KANS"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "ATLA__WASH",
+        "ATLA__DALL",
+        "DALL__KANS"
+      ],
+      "modeled_one_way_latency_ms": 27.432,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "LOSA",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "ATLA",
+        "DALL",
+        "LOSA"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "ATLA__WASH",
+        "ATLA__DALL",
+        "DALL__LOSA"
+      ],
+      "modeled_one_way_latency_ms": 40.388,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "MASS",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "NEWY",
+        "MASS"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "NEWY__WASH",
+        "MASS__NEWY"
+      ],
+      "modeled_one_way_latency_ms": 12.1455,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "MAX",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "MAX"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "MAX__WASH"
+      ],
+      "modeled_one_way_latency_ms": 9.055,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "MICH",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "MICH"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "MICH__STAR"
+      ],
+      "modeled_one_way_latency_ms": 24.2145,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "NCSA",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "NCSA"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "NCSA__STAR"
+      ],
+      "modeled_one_way_latency_ms": 22.8995,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "NEWY",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "NEWY"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "NEWY__WASH"
+      ],
+      "modeled_one_way_latency_ms": 10.726,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "PRIN",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "NEWY",
+        "PRIN"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "NEWY__WASH",
+        "NEWY__PRIN"
+      ],
+      "modeled_one_way_latency_ms": 11.393,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "PSC",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "PSC"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "PSC__WASH"
+      ],
+      "modeled_one_way_latency_ms": 11.251,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "RUTG",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "NEWY",
+        "RUTG"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "NEWY__WASH",
+        "NEWY__RUTG"
+      ],
+      "modeled_one_way_latency_ms": 11.2385,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "SALT",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "SALT"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "SALT__STAR"
+      ],
+      "modeled_one_way_latency_ms": 37.039,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "SEAT",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "SEAT"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "ATLA__WASH",
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "LOSA__SEAT"
+      ],
+      "modeled_one_way_latency_ms": 52.6665,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "SRI",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "ATLA__WASH",
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 44.4565,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "STAR",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "NEWY",
+        "STAR"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 21.665,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "TACC",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 32.8082,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "UCSD",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "ATLA__WASH",
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 41.5365,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "UTAH",
+      "site_path": [
+        "CLEM",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "CLEM__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "SALT__STAR",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 37.146,
+      "symmetric": true
+    },
+    {
+      "source": "CLEM",
+      "destination": "WASH",
+      "site_path": [
+        "CLEM",
+        "WASH"
+      ],
+      "links": [
+        "CLEM__WASH"
+      ],
+      "modeled_one_way_latency_ms": 8.1845,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "EDC",
+      "site_path": [
+        "DALL",
+        "KANS",
+        "STAR",
+        "NCSA",
+        "EDC"
+      ],
+      "links": [
+        "DALL__KANS",
+        "KANS__STAR",
+        "NCSA__STAR",
+        "EDC__NCSA"
+      ],
+      "modeled_one_way_latency_ms": 11.3215,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "EDUKY",
+      "site_path": [
+        "DALL",
+        "KANS",
+        "STAR",
+        "EDUKY"
+      ],
+      "links": [
+        "DALL__KANS",
+        "KANS__STAR",
+        "EDUKY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 14.0216,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "FIU",
+      "site_path": [
+        "DALL",
+        "ATLA",
+        "FIU"
+      ],
+      "links": [
+        "ATLA__DALL",
+        "ATLA__FIU"
+      ],
+      "modeled_one_way_latency_ms": 14.6235,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "GATECH",
+      "site_path": [
+        "DALL",
+        "ATLA",
+        "WASH",
+        "GATECH"
+      ],
+      "links": [
+        "ATLA__DALL",
+        "ATLA__WASH",
+        "GATECH__WASH"
+      ],
+      "modeled_one_way_latency_ms": 21.7055,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "GPN",
+      "site_path": [
+        "DALL",
+        "KANS",
+        "GPN"
+      ],
+      "links": [
+        "DALL__KANS",
+        "GPN__KANS"
+      ],
+      "modeled_one_way_latency_ms": 4.676,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "HAWI",
+      "site_path": [
+        "DALL",
+        "LOSA",
+        "HAWI"
+      ],
+      "links": [
+        "DALL__LOSA",
+        "HAWI__LOSA"
+      ],
+      "modeled_one_way_latency_ms": 42.056,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "INDI",
+      "site_path": [
+        "DALL",
+        "KANS",
+        "STAR",
+        "INDI"
+      ],
+      "links": [
+        "DALL__KANS",
+        "KANS__STAR",
+        "INDI__STAR"
+      ],
+      "modeled_one_way_latency_ms": 12.351,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "KANS",
+      "site_path": [
+        "DALL",
+        "KANS"
+      ],
+      "links": [
+        "DALL__KANS"
+      ],
+      "modeled_one_way_latency_ms": 4.5385,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "LOSA",
+      "site_path": [
+        "DALL",
+        "LOSA"
+      ],
+      "links": [
+        "DALL__LOSA"
+      ],
+      "modeled_one_way_latency_ms": 17.4945,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "MASS",
+      "site_path": [
+        "DALL",
+        "KANS",
+        "STAR",
+        "NEWY",
+        "MASS"
+      ],
+      "links": [
+        "DALL__KANS",
+        "KANS__STAR",
+        "NEWY__STAR",
+        "MASS__NEWY"
+      ],
+      "modeled_one_way_latency_ms": 22.3955,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "MAX",
+      "site_path": [
+        "DALL",
+        "ATLA",
+        "WASH",
+        "MAX"
+      ],
+      "links": [
+        "ATLA__DALL",
+        "ATLA__WASH",
+        "MAX__WASH"
+      ],
+      "modeled_one_way_latency_ms": 15.5795,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "MICH",
+      "site_path": [
+        "DALL",
+        "KANS",
+        "STAR",
+        "MICH"
+      ],
+      "links": [
+        "DALL__KANS",
+        "KANS__STAR",
+        "MICH__STAR"
+      ],
+      "modeled_one_way_latency_ms": 12.5865,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "NCSA",
+      "site_path": [
+        "DALL",
+        "KANS",
+        "STAR",
+        "NCSA"
+      ],
+      "links": [
+        "DALL__KANS",
+        "KANS__STAR",
+        "NCSA__STAR"
+      ],
+      "modeled_one_way_latency_ms": 11.2715,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "NEWY",
+      "site_path": [
+        "DALL",
+        "KANS",
+        "STAR",
+        "NEWY"
+      ],
+      "links": [
+        "DALL__KANS",
+        "KANS__STAR",
+        "NEWY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 20.976,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "PRIN",
+      "site_path": [
+        "DALL",
+        "KANS",
+        "STAR",
+        "NEWY",
+        "PRIN"
+      ],
+      "links": [
+        "DALL__KANS",
+        "KANS__STAR",
+        "NEWY__STAR",
+        "NEWY__PRIN"
+      ],
+      "modeled_one_way_latency_ms": 21.643,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "PSC",
+      "site_path": [
+        "DALL",
+        "ATLA",
+        "WASH",
+        "PSC"
+      ],
+      "links": [
+        "ATLA__DALL",
+        "ATLA__WASH",
+        "PSC__WASH"
+      ],
+      "modeled_one_way_latency_ms": 17.7755,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "RUTG",
+      "site_path": [
+        "DALL",
+        "KANS",
+        "STAR",
+        "NEWY",
+        "RUTG"
+      ],
+      "links": [
+        "DALL__KANS",
+        "KANS__STAR",
+        "NEWY__STAR",
+        "NEWY__RUTG"
+      ],
+      "modeled_one_way_latency_ms": 21.4885,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "SALT",
+      "site_path": [
+        "DALL",
+        "KANS",
+        "SALT"
+      ],
+      "links": [
+        "DALL__KANS",
+        "KANS__SALT"
+      ],
+      "modeled_one_way_latency_ms": 14.468,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "SEAT",
+      "site_path": [
+        "DALL",
+        "LOSA",
+        "SEAT"
+      ],
+      "links": [
+        "DALL__LOSA",
+        "LOSA__SEAT"
+      ],
+      "modeled_one_way_latency_ms": 29.773,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "SRI",
+      "site_path": [
+        "DALL",
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "DALL__LOSA",
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 21.563,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "STAR",
+      "site_path": [
+        "DALL",
+        "KANS",
+        "STAR"
+      ],
+      "links": [
+        "DALL__KANS",
+        "KANS__STAR"
+      ],
+      "modeled_one_way_latency_ms": 10.037,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "TACC",
+      "site_path": [
+        "DALL",
+        "KANS",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "DALL__KANS",
+        "KANS__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 21.1802,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "UCSD",
+      "site_path": [
+        "DALL",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "DALL__LOSA",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 18.643,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "UTAH",
+      "site_path": [
+        "DALL",
+        "KANS",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "DALL__KANS",
+        "KANS__SALT",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 14.575,
+      "symmetric": true
+    },
+    {
+      "source": "DALL",
+      "destination": "WASH",
+      "site_path": [
+        "DALL",
+        "ATLA",
+        "WASH"
+      ],
+      "links": [
+        "ATLA__DALL",
+        "ATLA__WASH"
+      ],
+      "modeled_one_way_latency_ms": 14.709,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "EDUKY",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "EDUKY"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "EDUKY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 5.2691,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "FIU",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "NEWY",
+        "WASH",
+        "ATLA",
+        "FIU"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "NEWY__STAR",
+        "NEWY__WASH",
+        "ATLA__WASH",
+        "ATLA__FIU"
+      ],
+      "modeled_one_way_latency_ms": 27.4155,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "GATECH",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "NEWY",
+        "WASH",
+        "GATECH"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "NEWY__STAR",
+        "NEWY__WASH",
+        "GATECH__WASH"
+      ],
+      "modeled_one_way_latency_ms": 21.7615,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "GPN",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "KANS",
+        "GPN"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "KANS__STAR",
+        "GPN__KANS"
+      ],
+      "modeled_one_way_latency_ms": 6.9205,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "HAWI",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "HAWI"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "HAWI__LOSA"
+      ],
+      "modeled_one_way_latency_ms": 47.341,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "INDI",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "INDI"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "INDI__STAR"
+      ],
+      "modeled_one_way_latency_ms": 3.5985,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "KANS",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "KANS"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "KANS__STAR"
+      ],
+      "modeled_one_way_latency_ms": 6.783,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "LOSA",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "SALT",
+        "LOSA"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "SALT__STAR",
+        "LOSA__SALT"
+      ],
+      "modeled_one_way_latency_ms": 22.7795,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "MASS",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "NEWY",
+        "MASS"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "NEWY__STAR",
+        "MASS__NEWY"
+      ],
+      "modeled_one_way_latency_ms": 13.643,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "MAX",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "NEWY",
+        "WASH",
+        "MAX"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "NEWY__STAR",
+        "NEWY__WASH",
+        "MAX__WASH"
+      ],
+      "modeled_one_way_latency_ms": 15.6355,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "MICH",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "MICH"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "MICH__STAR"
+      ],
+      "modeled_one_way_latency_ms": 3.834,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "NCSA",
+      "site_path": [
+        "EDC",
+        "NCSA"
+      ],
+      "links": [
+        "EDC__NCSA"
+      ],
+      "modeled_one_way_latency_ms": 0.05,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "NEWY",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "NEWY"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "NEWY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 12.2235,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "PRIN",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "NEWY",
+        "PRIN"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "NEWY__STAR",
+        "NEWY__PRIN"
+      ],
+      "modeled_one_way_latency_ms": 12.8905,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "PSC",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "NEWY",
+        "WASH",
+        "PSC"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "NEWY__STAR",
+        "NEWY__WASH",
+        "PSC__WASH"
+      ],
+      "modeled_one_way_latency_ms": 17.8315,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "RUTG",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "NEWY",
+        "RUTG"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "NEWY__STAR",
+        "NEWY__RUTG"
+      ],
+      "modeled_one_way_latency_ms": 12.736,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "SALT",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "SALT"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "SALT__STAR"
+      ],
+      "modeled_one_way_latency_ms": 16.6585,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "SEAT",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "SEAT"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__SEAT"
+      ],
+      "modeled_one_way_latency_ms": 35.058,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "SRI",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 26.848,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "STAR",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR"
+      ],
+      "modeled_one_way_latency_ms": 1.2845,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "TACC",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 12.4277,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "UCSD",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 23.928,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "UTAH",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "SALT__STAR",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 16.7655,
+      "symmetric": true
+    },
+    {
+      "source": "EDC",
+      "destination": "WASH",
+      "site_path": [
+        "EDC",
+        "NCSA",
+        "STAR",
+        "NEWY",
+        "WASH"
+      ],
+      "links": [
+        "EDC__NCSA",
+        "NCSA__STAR",
+        "NEWY__STAR",
+        "NEWY__WASH"
+      ],
+      "modeled_one_way_latency_ms": 14.765,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "FIU",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "NEWY",
+        "WASH",
+        "ATLA",
+        "FIU"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "NEWY__STAR",
+        "NEWY__WASH",
+        "ATLA__WASH",
+        "ATLA__FIU"
+      ],
+      "modeled_one_way_latency_ms": 30.1156,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "GATECH",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "NEWY",
+        "WASH",
+        "GATECH"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "NEWY__STAR",
+        "NEWY__WASH",
+        "GATECH__WASH"
+      ],
+      "modeled_one_way_latency_ms": 24.4616,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "GPN",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "KANS",
+        "GPN"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "KANS__STAR",
+        "GPN__KANS"
+      ],
+      "modeled_one_way_latency_ms": 9.6206,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "HAWI",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "HAWI"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "HAWI__LOSA"
+      ],
+      "modeled_one_way_latency_ms": 50.0411,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "INDI",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "INDI"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "INDI__STAR"
+      ],
+      "modeled_one_way_latency_ms": 6.2986,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "KANS",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "KANS"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "KANS__STAR"
+      ],
+      "modeled_one_way_latency_ms": 9.4831,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "LOSA",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "SALT",
+        "LOSA"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "SALT__STAR",
+        "LOSA__SALT"
+      ],
+      "modeled_one_way_latency_ms": 25.4796,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "MASS",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "NEWY",
+        "MASS"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "NEWY__STAR",
+        "MASS__NEWY"
+      ],
+      "modeled_one_way_latency_ms": 16.3431,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "MAX",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "NEWY",
+        "WASH",
+        "MAX"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "NEWY__STAR",
+        "NEWY__WASH",
+        "MAX__WASH"
+      ],
+      "modeled_one_way_latency_ms": 18.3356,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "MICH",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "MICH"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "MICH__STAR"
+      ],
+      "modeled_one_way_latency_ms": 6.5341,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "NCSA",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "NCSA"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "NCSA__STAR"
+      ],
+      "modeled_one_way_latency_ms": 5.2191,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "NEWY",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "NEWY"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "NEWY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 14.9236,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "PRIN",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "NEWY",
+        "PRIN"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "NEWY__STAR",
+        "NEWY__PRIN"
+      ],
+      "modeled_one_way_latency_ms": 15.5906,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "PSC",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "NEWY",
+        "WASH",
+        "PSC"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "NEWY__STAR",
+        "NEWY__WASH",
+        "PSC__WASH"
+      ],
+      "modeled_one_way_latency_ms": 20.5316,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "RUTG",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "NEWY",
+        "RUTG"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "NEWY__STAR",
+        "NEWY__RUTG"
+      ],
+      "modeled_one_way_latency_ms": 15.4361,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "SALT",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "SALT"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "SALT__STAR"
+      ],
+      "modeled_one_way_latency_ms": 19.3586,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "SEAT",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "SEAT"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__SEAT"
+      ],
+      "modeled_one_way_latency_ms": 37.7581,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "SRI",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 29.5481,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "STAR",
+      "site_path": [
+        "EDUKY",
+        "STAR"
+      ],
+      "links": [
+        "EDUKY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 3.9846,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "TACC",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 15.1278,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "UCSD",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 26.6281,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "UTAH",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "SALT__STAR",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 19.4656,
+      "symmetric": true
+    },
+    {
+      "source": "EDUKY",
+      "destination": "WASH",
+      "site_path": [
+        "EDUKY",
+        "STAR",
+        "NEWY",
+        "WASH"
+      ],
+      "links": [
+        "EDUKY__STAR",
+        "NEWY__STAR",
+        "NEWY__WASH"
+      ],
+      "modeled_one_way_latency_ms": 17.4651,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "GATECH",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "WASH",
+        "GATECH"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__WASH",
+        "GATECH__WASH"
+      ],
+      "modeled_one_way_latency_ms": 19.647,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "GPN",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "DALL",
+        "KANS",
+        "GPN"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__DALL",
+        "DALL__KANS",
+        "GPN__KANS"
+      ],
+      "modeled_one_way_latency_ms": 19.2995,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "HAWI",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "HAWI"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "HAWI__LOSA"
+      ],
+      "modeled_one_way_latency_ms": 56.6795,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "INDI",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "INDI"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "INDI__STAR"
+      ],
+      "modeled_one_way_latency_ms": 28.445,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "KANS",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "DALL",
+        "KANS"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__DALL",
+        "DALL__KANS"
+      ],
+      "modeled_one_way_latency_ms": 19.162,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "LOSA",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "DALL",
+        "LOSA"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__DALL",
+        "DALL__LOSA"
+      ],
+      "modeled_one_way_latency_ms": 32.118,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "MASS",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "WASH",
+        "NEWY",
+        "MASS"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__WASH",
+        "NEWY__WASH",
+        "MASS__NEWY"
+      ],
+      "modeled_one_way_latency_ms": 16.6115,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "MAX",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "WASH",
+        "MAX"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__WASH",
+        "MAX__WASH"
+      ],
+      "modeled_one_way_latency_ms": 13.521,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "MICH",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "MICH"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "MICH__STAR"
+      ],
+      "modeled_one_way_latency_ms": 28.6805,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "NCSA",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "NCSA"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "NCSA__STAR"
+      ],
+      "modeled_one_way_latency_ms": 27.3655,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "NEWY",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "WASH",
+        "NEWY"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__WASH",
+        "NEWY__WASH"
+      ],
+      "modeled_one_way_latency_ms": 15.192,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "PRIN",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "WASH",
+        "NEWY",
+        "PRIN"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__WASH",
+        "NEWY__WASH",
+        "NEWY__PRIN"
+      ],
+      "modeled_one_way_latency_ms": 15.859,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "PSC",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "WASH",
+        "PSC"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__WASH",
+        "PSC__WASH"
+      ],
+      "modeled_one_way_latency_ms": 15.717,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "RUTG",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "WASH",
+        "NEWY",
+        "RUTG"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__WASH",
+        "NEWY__WASH",
+        "NEWY__RUTG"
+      ],
+      "modeled_one_way_latency_ms": 15.7045,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "SALT",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "DALL",
+        "KANS",
+        "SALT"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__DALL",
+        "DALL__KANS",
+        "KANS__SALT"
+      ],
+      "modeled_one_way_latency_ms": 29.0915,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "SEAT",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "SEAT"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "LOSA__SEAT"
+      ],
+      "modeled_one_way_latency_ms": 44.3965,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "SRI",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 36.1865,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "STAR",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "WASH",
+        "NEWY",
+        "STAR"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 26.131,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "TACC",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 37.2742,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "UCSD",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 33.2665,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "UTAH",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "DALL",
+        "KANS",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__DALL",
+        "DALL__KANS",
+        "KANS__SALT",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 29.1985,
+      "symmetric": true
+    },
+    {
+      "source": "FIU",
+      "destination": "WASH",
+      "site_path": [
+        "FIU",
+        "ATLA",
+        "WASH"
+      ],
+      "links": [
+        "ATLA__FIU",
+        "ATLA__WASH"
+      ],
+      "modeled_one_way_latency_ms": 12.6505,
+      "symmetric": true
+    },
+    {
+      "source": "GATECH",
+      "destination": "GPN",
+      "site_path": [
+        "GATECH",
+        "WASH",
+        "ATLA",
+        "DALL",
+        "KANS",
+        "GPN"
+      ],
+      "links": [
+        "GATECH__WASH",
+        "ATLA__WASH",
+        "ATLA__DALL",
+        "DALL__KANS",
+        "GPN__KANS"
+      ],
+      "modeled_one_way_latency_ms": 26.3815,
+      "symmetric": true
+    },
+    {
+      "source": "GATECH",
+      "destination": "HAWI",
+      "site_path": [
+        "GATECH",
+        "WASH",
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "HAWI"
+      ],
+      "links": [
+        "GATECH__WASH",
+        "ATLA__WASH",
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "HAWI__LOSA"
+      ],
+      "modeled_one_way_latency_ms": 63.7615,
+      "symmetric": true
+    },
+    {
+      "source": "GATECH",
+      "destination": "INDI",
+      "site_path": [
+        "GATECH",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "INDI"
+      ],
+      "links": [
+        "GATECH__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "INDI__STAR"
+      ],
+      "modeled_one_way_latency_ms": 22.791,
+      "symmetric": true
+    },
+    {
+      "source": "GATECH",
+      "destination": "KANS",
+      "site_path": [
+        "GATECH",
+        "WASH",
+        "ATLA",
+        "DALL",
+        "KANS"
+      ],
+      "links": [
+        "GATECH__WASH",
+        "ATLA__WASH",
+        "ATLA__DALL",
+        "DALL__KANS"
+      ],
+      "modeled_one_way_latency_ms": 26.244,
+      "symmetric": true
+    },
+    {
+      "source": "GATECH",
+      "destination": "LOSA",
+      "site_path": [
+        "GATECH",
+        "WASH",
+        "ATLA",
+        "DALL",
+        "LOSA"
+      ],
+      "links": [
+        "GATECH__WASH",
+        "ATLA__WASH",
+        "ATLA__DALL",
+        "DALL__LOSA"
+      ],
+      "modeled_one_way_latency_ms": 39.2,
+      "symmetric": true
+    },
+    {
+      "source": "GATECH",
+      "destination": "MASS",
+      "site_path": [
+        "GATECH",
+        "WASH",
+        "NEWY",
+        "MASS"
+      ],
+      "links": [
+        "GATECH__WASH",
+        "NEWY__WASH",
+        "MASS__NEWY"
+      ],
+      "modeled_one_way_latency_ms": 10.9575,
+      "symmetric": true
+    },
+    {
+      "source": "GATECH",
+      "destination": "MAX",
+      "site_path": [
+        "GATECH",
+        "WASH",
+        "MAX"
+      ],
+      "links": [
+        "GATECH__WASH",
+        "MAX__WASH"
+      ],
+      "modeled_one_way_latency_ms": 7.867,
+      "symmetric": true
+    },
+    {
+      "source": "GATECH",
+      "destination": "MICH",
+      "site_path": [
+        "GATECH",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "MICH"
+      ],
+      "links": [
+        "GATECH__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "MICH__STAR"
+      ],
+      "modeled_one_way_latency_ms": 23.0265,
+      "symmetric": true
+    },
+    {
+      "source": "GATECH",
+      "destination": "NCSA",
+      "site_path": [
+        "GATECH",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "NCSA"
+      ],
+      "links": [
+        "GATECH__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "NCSA__STAR"
+      ],
+      "modeled_one_way_latency_ms": 21.7115,
+      "symmetric": true
+    },
+    {
+      "source": "GATECH",
+      "destination": "NEWY",
+      "site_path": [
+        "GATECH",
+        "WASH",
+        "NEWY"
+      ],
+      "links": [
+        "GATECH__WASH",
+        "NEWY__WASH"
+      ],
+      "modeled_one_way_latency_ms": 9.538,
+      "symmetric": true
+    },
+    {
+      "source": "GATECH",
+      "destination": "PRIN",
+      "site_path": [
+        "GATECH",
+        "WASH",
+        "NEWY",
+        "PRIN"
+      ],
+      "links": [
+        "GATECH__WASH",
+        "NEWY__WASH",
+        "NEWY__PRIN"
+      ],
+      "modeled_one_way_latency_ms": 10.205,
+      "symmetric": true
+    },
+    {
+      "source": "GATECH",
+      "destination": "PSC",
+      "site_path": [
+        "GATECH",
+        "WASH",
+        "PSC"
+      ],
+      "links": [
+        "GATECH__WASH",
+        "PSC__WASH"
+      ],
+      "modeled_one_way_latency_ms": 10.063,
+      "symmetric": true
+    },
+    {
+      "source": "GATECH",
+      "destination": "RUTG",
+      "site_path": [
+        "GATECH",
+        "WASH",
+        "NEWY",
+        "RUTG"
+      ],
+      "links": [
+        "GATECH__WASH",
+        "NEWY__WASH",
+        "NEWY__RUTG"
+      ],
+      "modeled_one_way_latency_ms": 10.0505,
+      "symmetric": true
+    },
+    {
+      "source": "GATECH",
+      "destination": "SALT",
+      "site_path": [
+        "GATECH",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "SALT"
+      ],
+      "links": [
+        "GATECH__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "SALT__STAR"
+      ],
+      "modeled_one_way_latency_ms": 35.851,
+      "symmetric": true
+    },
+    {
+      "source": "GATECH",
+      "destination": "SEAT",
+      "site_path": [
+        "GATECH",
+        "WASH",
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "SEAT"
+      ],
+      "links": [
+        "GATECH__WASH",
+        "ATLA__WASH",
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "LOSA__SEAT"
+      ],
+      "modeled_one_way_latency_ms": 51.4785,
+      "symmetric": true
+    },
+    {
+      "source": "GATECH",
+      "destination": "SRI",
+      "site_path": [
+        "GATECH",
+        "WASH",
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "GATECH__WASH",
+        "ATLA__WASH",
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 43.2685,
+      "symmetric": true
+    },
+    {
+      "source": "GATECH",
+      "destination": "STAR",
+      "site_path": [
+        "GATECH",
+        "WASH",
+        "NEWY",
+        "STAR"
+      ],
+      "links": [
+        "GATECH__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 20.477,
+      "symmetric": true
+    },
+    {
+      "source": "GATECH",
+      "destination": "TACC",
+      "site_path": [
+        "GATECH",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "GATECH__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 31.6202,
+      "symmetric": true
+    },
+    {
+      "source": "GATECH",
+      "destination": "UCSD",
+      "site_path": [
+        "GATECH",
+        "WASH",
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "GATECH__WASH",
+        "ATLA__WASH",
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 40.3485,
+      "symmetric": true
+    },
+    {
+      "source": "GATECH",
+      "destination": "UTAH",
+      "site_path": [
+        "GATECH",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "GATECH__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "SALT__STAR",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 35.958,
+      "symmetric": true
+    },
+    {
+      "source": "GATECH",
+      "destination": "WASH",
+      "site_path": [
+        "GATECH",
+        "WASH"
+      ],
+      "links": [
+        "GATECH__WASH"
+      ],
+      "modeled_one_way_latency_ms": 6.9965,
+      "symmetric": true
+    },
+    {
+      "source": "GPN",
+      "destination": "HAWI",
+      "site_path": [
+        "GPN",
+        "KANS",
+        "SALT",
+        "LOSA",
+        "HAWI"
+      ],
+      "links": [
+        "GPN__KANS",
+        "KANS__SALT",
+        "LOSA__SALT",
+        "HAWI__LOSA"
+      ],
+      "modeled_one_way_latency_ms": 40.7495,
+      "symmetric": true
+    },
+    {
+      "source": "GPN",
+      "destination": "INDI",
+      "site_path": [
+        "GPN",
+        "KANS",
+        "STAR",
+        "INDI"
+      ],
+      "links": [
+        "GPN__KANS",
+        "KANS__STAR",
+        "INDI__STAR"
+      ],
+      "modeled_one_way_latency_ms": 7.95,
+      "symmetric": true
+    },
+    {
+      "source": "GPN",
+      "destination": "KANS",
+      "site_path": [
+        "GPN",
+        "KANS"
+      ],
+      "links": [
+        "GPN__KANS"
+      ],
+      "modeled_one_way_latency_ms": 0.1375,
+      "symmetric": true
+    },
+    {
+      "source": "GPN",
+      "destination": "LOSA",
+      "site_path": [
+        "GPN",
+        "KANS",
+        "SALT",
+        "LOSA"
+      ],
+      "links": [
+        "GPN__KANS",
+        "KANS__SALT",
+        "LOSA__SALT"
+      ],
+      "modeled_one_way_latency_ms": 16.188,
+      "symmetric": true
+    },
+    {
+      "source": "GPN",
+      "destination": "MASS",
+      "site_path": [
+        "GPN",
+        "KANS",
+        "STAR",
+        "NEWY",
+        "MASS"
+      ],
+      "links": [
+        "GPN__KANS",
+        "KANS__STAR",
+        "NEWY__STAR",
+        "MASS__NEWY"
+      ],
+      "modeled_one_way_latency_ms": 17.9945,
+      "symmetric": true
+    },
+    {
+      "source": "GPN",
+      "destination": "MAX",
+      "site_path": [
+        "GPN",
+        "KANS",
+        "DALL",
+        "ATLA",
+        "WASH",
+        "MAX"
+      ],
+      "links": [
+        "GPN__KANS",
+        "DALL__KANS",
+        "ATLA__DALL",
+        "ATLA__WASH",
+        "MAX__WASH"
+      ],
+      "modeled_one_way_latency_ms": 20.2555,
+      "symmetric": true
+    },
+    {
+      "source": "GPN",
+      "destination": "MICH",
+      "site_path": [
+        "GPN",
+        "KANS",
+        "STAR",
+        "MICH"
+      ],
+      "links": [
+        "GPN__KANS",
+        "KANS__STAR",
+        "MICH__STAR"
+      ],
+      "modeled_one_way_latency_ms": 8.1855,
+      "symmetric": true
+    },
+    {
+      "source": "GPN",
+      "destination": "NCSA",
+      "site_path": [
+        "GPN",
+        "KANS",
+        "STAR",
+        "NCSA"
+      ],
+      "links": [
+        "GPN__KANS",
+        "KANS__STAR",
+        "NCSA__STAR"
+      ],
+      "modeled_one_way_latency_ms": 6.8705,
+      "symmetric": true
+    },
+    {
+      "source": "GPN",
+      "destination": "NEWY",
+      "site_path": [
+        "GPN",
+        "KANS",
+        "STAR",
+        "NEWY"
+      ],
+      "links": [
+        "GPN__KANS",
+        "KANS__STAR",
+        "NEWY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 16.575,
+      "symmetric": true
+    },
+    {
+      "source": "GPN",
+      "destination": "PRIN",
+      "site_path": [
+        "GPN",
+        "KANS",
+        "STAR",
+        "NEWY",
+        "PRIN"
+      ],
+      "links": [
+        "GPN__KANS",
+        "KANS__STAR",
+        "NEWY__STAR",
+        "NEWY__PRIN"
+      ],
+      "modeled_one_way_latency_ms": 17.242,
+      "symmetric": true
+    },
+    {
+      "source": "GPN",
+      "destination": "PSC",
+      "site_path": [
+        "GPN",
+        "KANS",
+        "DALL",
+        "ATLA",
+        "WASH",
+        "PSC"
+      ],
+      "links": [
+        "GPN__KANS",
+        "DALL__KANS",
+        "ATLA__DALL",
+        "ATLA__WASH",
+        "PSC__WASH"
+      ],
+      "modeled_one_way_latency_ms": 22.4515,
+      "symmetric": true
+    },
+    {
+      "source": "GPN",
+      "destination": "RUTG",
+      "site_path": [
+        "GPN",
+        "KANS",
+        "STAR",
+        "NEWY",
+        "RUTG"
+      ],
+      "links": [
+        "GPN__KANS",
+        "KANS__STAR",
+        "NEWY__STAR",
+        "NEWY__RUTG"
+      ],
+      "modeled_one_way_latency_ms": 17.0875,
+      "symmetric": true
+    },
+    {
+      "source": "GPN",
+      "destination": "SALT",
+      "site_path": [
+        "GPN",
+        "KANS",
+        "SALT"
+      ],
+      "links": [
+        "GPN__KANS",
+        "KANS__SALT"
+      ],
+      "modeled_one_way_latency_ms": 10.067,
+      "symmetric": true
+    },
+    {
+      "source": "GPN",
+      "destination": "SEAT",
+      "site_path": [
+        "GPN",
+        "KANS",
+        "DALL",
+        "LOSA",
+        "SEAT"
+      ],
+      "links": [
+        "GPN__KANS",
+        "DALL__KANS",
+        "DALL__LOSA",
+        "LOSA__SEAT"
+      ],
+      "modeled_one_way_latency_ms": 34.449,
+      "symmetric": true
+    },
+    {
+      "source": "GPN",
+      "destination": "SRI",
+      "site_path": [
+        "GPN",
+        "KANS",
+        "SALT",
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "GPN__KANS",
+        "KANS__SALT",
+        "LOSA__SALT",
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 20.2565,
+      "symmetric": true
+    },
+    {
+      "source": "GPN",
+      "destination": "STAR",
+      "site_path": [
+        "GPN",
+        "KANS",
+        "STAR"
+      ],
+      "links": [
+        "GPN__KANS",
+        "KANS__STAR"
+      ],
+      "modeled_one_way_latency_ms": 5.636,
+      "symmetric": true
+    },
+    {
+      "source": "GPN",
+      "destination": "TACC",
+      "site_path": [
+        "GPN",
+        "KANS",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "GPN__KANS",
+        "KANS__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 16.7792,
+      "symmetric": true
+    },
+    {
+      "source": "GPN",
+      "destination": "UCSD",
+      "site_path": [
+        "GPN",
+        "KANS",
+        "SALT",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "GPN__KANS",
+        "KANS__SALT",
+        "LOSA__SALT",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 17.3365,
+      "symmetric": true
+    },
+    {
+      "source": "GPN",
+      "destination": "UTAH",
+      "site_path": [
+        "GPN",
+        "KANS",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "GPN__KANS",
+        "KANS__SALT",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 10.174,
+      "symmetric": true
+    },
+    {
+      "source": "GPN",
+      "destination": "WASH",
+      "site_path": [
+        "GPN",
+        "KANS",
+        "DALL",
+        "ATLA",
+        "WASH"
+      ],
+      "links": [
+        "GPN__KANS",
+        "DALL__KANS",
+        "ATLA__DALL",
+        "ATLA__WASH"
+      ],
+      "modeled_one_way_latency_ms": 19.385,
+      "symmetric": true
+    },
+    {
+      "source": "HAWI",
+      "destination": "INDI",
+      "site_path": [
+        "HAWI",
+        "LOSA",
+        "SALT",
+        "STAR",
+        "INDI"
+      ],
+      "links": [
+        "HAWI__LOSA",
+        "LOSA__SALT",
+        "SALT__STAR",
+        "INDI__STAR"
+      ],
+      "modeled_one_way_latency_ms": 48.3705,
+      "symmetric": true
+    },
+    {
+      "source": "HAWI",
+      "destination": "KANS",
+      "site_path": [
+        "HAWI",
+        "LOSA",
+        "SALT",
+        "KANS"
+      ],
+      "links": [
+        "HAWI__LOSA",
+        "LOSA__SALT",
+        "KANS__SALT"
+      ],
+      "modeled_one_way_latency_ms": 40.612,
+      "symmetric": true
+    },
+    {
+      "source": "HAWI",
+      "destination": "LOSA",
+      "site_path": [
+        "HAWI",
+        "LOSA"
+      ],
+      "links": [
+        "HAWI__LOSA"
+      ],
+      "modeled_one_way_latency_ms": 24.5615,
+      "symmetric": true
+    },
+    {
+      "source": "HAWI",
+      "destination": "MASS",
+      "site_path": [
+        "HAWI",
+        "LOSA",
+        "SALT",
+        "STAR",
+        "NEWY",
+        "MASS"
+      ],
+      "links": [
+        "HAWI__LOSA",
+        "LOSA__SALT",
+        "SALT__STAR",
+        "NEWY__STAR",
+        "MASS__NEWY"
+      ],
+      "modeled_one_way_latency_ms": 58.415,
+      "symmetric": true
+    },
+    {
+      "source": "HAWI",
+      "destination": "MAX",
+      "site_path": [
+        "HAWI",
+        "LOSA",
+        "DALL",
+        "ATLA",
+        "WASH",
+        "MAX"
+      ],
+      "links": [
+        "HAWI__LOSA",
+        "DALL__LOSA",
+        "ATLA__DALL",
+        "ATLA__WASH",
+        "MAX__WASH"
+      ],
+      "modeled_one_way_latency_ms": 57.6355,
+      "symmetric": true
+    },
+    {
+      "source": "HAWI",
+      "destination": "MICH",
+      "site_path": [
+        "HAWI",
+        "LOSA",
+        "SALT",
+        "STAR",
+        "MICH"
+      ],
+      "links": [
+        "HAWI__LOSA",
+        "LOSA__SALT",
+        "SALT__STAR",
+        "MICH__STAR"
+      ],
+      "modeled_one_way_latency_ms": 48.606,
+      "symmetric": true
+    },
+    {
+      "source": "HAWI",
+      "destination": "NCSA",
+      "site_path": [
+        "HAWI",
+        "LOSA",
+        "SALT",
+        "STAR",
+        "NCSA"
+      ],
+      "links": [
+        "HAWI__LOSA",
+        "LOSA__SALT",
+        "SALT__STAR",
+        "NCSA__STAR"
+      ],
+      "modeled_one_way_latency_ms": 47.291,
+      "symmetric": true
+    },
+    {
+      "source": "HAWI",
+      "destination": "NEWY",
+      "site_path": [
+        "HAWI",
+        "LOSA",
+        "SALT",
+        "STAR",
+        "NEWY"
+      ],
+      "links": [
+        "HAWI__LOSA",
+        "LOSA__SALT",
+        "SALT__STAR",
+        "NEWY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 56.9955,
+      "symmetric": true
+    },
+    {
+      "source": "HAWI",
+      "destination": "PRIN",
+      "site_path": [
+        "HAWI",
+        "LOSA",
+        "SALT",
+        "STAR",
+        "NEWY",
+        "PRIN"
+      ],
+      "links": [
+        "HAWI__LOSA",
+        "LOSA__SALT",
+        "SALT__STAR",
+        "NEWY__STAR",
+        "NEWY__PRIN"
+      ],
+      "modeled_one_way_latency_ms": 57.6625,
+      "symmetric": true
+    },
+    {
+      "source": "HAWI",
+      "destination": "PSC",
+      "site_path": [
+        "HAWI",
+        "LOSA",
+        "DALL",
+        "ATLA",
+        "WASH",
+        "PSC"
+      ],
+      "links": [
+        "HAWI__LOSA",
+        "DALL__LOSA",
+        "ATLA__DALL",
+        "ATLA__WASH",
+        "PSC__WASH"
+      ],
+      "modeled_one_way_latency_ms": 59.8315,
+      "symmetric": true
+    },
+    {
+      "source": "HAWI",
+      "destination": "RUTG",
+      "site_path": [
+        "HAWI",
+        "LOSA",
+        "SALT",
+        "STAR",
+        "NEWY",
+        "RUTG"
+      ],
+      "links": [
+        "HAWI__LOSA",
+        "LOSA__SALT",
+        "SALT__STAR",
+        "NEWY__STAR",
+        "NEWY__RUTG"
+      ],
+      "modeled_one_way_latency_ms": 57.508,
+      "symmetric": true
+    },
+    {
+      "source": "HAWI",
+      "destination": "SALT",
+      "site_path": [
+        "HAWI",
+        "LOSA",
+        "SALT"
+      ],
+      "links": [
+        "HAWI__LOSA",
+        "LOSA__SALT"
+      ],
+      "modeled_one_way_latency_ms": 30.6825,
+      "symmetric": true
+    },
+    {
+      "source": "HAWI",
+      "destination": "SEAT",
+      "site_path": [
+        "HAWI",
+        "SEAT"
+      ],
+      "links": [
+        "HAWI__SEAT"
+      ],
+      "modeled_one_way_latency_ms": 36.5115,
+      "symmetric": true
+    },
+    {
+      "source": "HAWI",
+      "destination": "SRI",
+      "site_path": [
+        "HAWI",
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "HAWI__LOSA",
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 28.63,
+      "symmetric": true
+    },
+    {
+      "source": "HAWI",
+      "destination": "STAR",
+      "site_path": [
+        "HAWI",
+        "LOSA",
+        "SALT",
+        "STAR"
+      ],
+      "links": [
+        "HAWI__LOSA",
+        "LOSA__SALT",
+        "SALT__STAR"
+      ],
+      "modeled_one_way_latency_ms": 46.0565,
+      "symmetric": true
+    },
+    {
+      "source": "HAWI",
+      "destination": "TACC",
+      "site_path": [
+        "HAWI",
+        "LOSA",
+        "SALT",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "HAWI__LOSA",
+        "LOSA__SALT",
+        "SALT__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 57.1997,
+      "symmetric": true
+    },
+    {
+      "source": "HAWI",
+      "destination": "UCSD",
+      "site_path": [
+        "HAWI",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "HAWI__LOSA",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 25.71,
+      "symmetric": true
+    },
+    {
+      "source": "HAWI",
+      "destination": "UTAH",
+      "site_path": [
+        "HAWI",
+        "LOSA",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "HAWI__LOSA",
+        "LOSA__SALT",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 30.7895,
+      "symmetric": true
+    },
+    {
+      "source": "HAWI",
+      "destination": "WASH",
+      "site_path": [
+        "HAWI",
+        "LOSA",
+        "DALL",
+        "ATLA",
+        "WASH"
+      ],
+      "links": [
+        "HAWI__LOSA",
+        "DALL__LOSA",
+        "ATLA__DALL",
+        "ATLA__WASH"
+      ],
+      "modeled_one_way_latency_ms": 56.765,
+      "symmetric": true
+    },
+    {
+      "source": "INDI",
+      "destination": "KANS",
+      "site_path": [
+        "INDI",
+        "STAR",
+        "KANS"
+      ],
+      "links": [
+        "INDI__STAR",
+        "KANS__STAR"
+      ],
+      "modeled_one_way_latency_ms": 7.8125,
+      "symmetric": true
+    },
+    {
+      "source": "INDI",
+      "destination": "LOSA",
+      "site_path": [
+        "INDI",
+        "STAR",
+        "SALT",
+        "LOSA"
+      ],
+      "links": [
+        "INDI__STAR",
+        "SALT__STAR",
+        "LOSA__SALT"
+      ],
+      "modeled_one_way_latency_ms": 23.809,
+      "symmetric": true
+    },
+    {
+      "source": "INDI",
+      "destination": "MASS",
+      "site_path": [
+        "INDI",
+        "STAR",
+        "NEWY",
+        "MASS"
+      ],
+      "links": [
+        "INDI__STAR",
+        "NEWY__STAR",
+        "MASS__NEWY"
+      ],
+      "modeled_one_way_latency_ms": 14.6725,
+      "symmetric": true
+    },
+    {
+      "source": "INDI",
+      "destination": "MAX",
+      "site_path": [
+        "INDI",
+        "STAR",
+        "NEWY",
+        "WASH",
+        "MAX"
+      ],
+      "links": [
+        "INDI__STAR",
+        "NEWY__STAR",
+        "NEWY__WASH",
+        "MAX__WASH"
+      ],
+      "modeled_one_way_latency_ms": 16.665,
+      "symmetric": true
+    },
+    {
+      "source": "INDI",
+      "destination": "MICH",
+      "site_path": [
+        "INDI",
+        "STAR",
+        "MICH"
+      ],
+      "links": [
+        "INDI__STAR",
+        "MICH__STAR"
+      ],
+      "modeled_one_way_latency_ms": 4.8635,
+      "symmetric": true
+    },
+    {
+      "source": "INDI",
+      "destination": "NCSA",
+      "site_path": [
+        "INDI",
+        "STAR",
+        "NCSA"
+      ],
+      "links": [
+        "INDI__STAR",
+        "NCSA__STAR"
+      ],
+      "modeled_one_way_latency_ms": 3.5485,
+      "symmetric": true
+    },
+    {
+      "source": "INDI",
+      "destination": "NEWY",
+      "site_path": [
+        "INDI",
+        "STAR",
+        "NEWY"
+      ],
+      "links": [
+        "INDI__STAR",
+        "NEWY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 13.253,
+      "symmetric": true
+    },
+    {
+      "source": "INDI",
+      "destination": "PRIN",
+      "site_path": [
+        "INDI",
+        "STAR",
+        "NEWY",
+        "PRIN"
+      ],
+      "links": [
+        "INDI__STAR",
+        "NEWY__STAR",
+        "NEWY__PRIN"
+      ],
+      "modeled_one_way_latency_ms": 13.92,
+      "symmetric": true
+    },
+    {
+      "source": "INDI",
+      "destination": "PSC",
+      "site_path": [
+        "INDI",
+        "STAR",
+        "NEWY",
+        "WASH",
+        "PSC"
+      ],
+      "links": [
+        "INDI__STAR",
+        "NEWY__STAR",
+        "NEWY__WASH",
+        "PSC__WASH"
+      ],
+      "modeled_one_way_latency_ms": 18.861,
+      "symmetric": true
+    },
+    {
+      "source": "INDI",
+      "destination": "RUTG",
+      "site_path": [
+        "INDI",
+        "STAR",
+        "NEWY",
+        "RUTG"
+      ],
+      "links": [
+        "INDI__STAR",
+        "NEWY__STAR",
+        "NEWY__RUTG"
+      ],
+      "modeled_one_way_latency_ms": 13.7655,
+      "symmetric": true
+    },
+    {
+      "source": "INDI",
+      "destination": "SALT",
+      "site_path": [
+        "INDI",
+        "STAR",
+        "SALT"
+      ],
+      "links": [
+        "INDI__STAR",
+        "SALT__STAR"
+      ],
+      "modeled_one_way_latency_ms": 17.688,
+      "symmetric": true
+    },
+    {
+      "source": "INDI",
+      "destination": "SEAT",
+      "site_path": [
+        "INDI",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "SEAT"
+      ],
+      "links": [
+        "INDI__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__SEAT"
+      ],
+      "modeled_one_way_latency_ms": 36.0875,
+      "symmetric": true
+    },
+    {
+      "source": "INDI",
+      "destination": "SRI",
+      "site_path": [
+        "INDI",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "INDI__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 27.8775,
+      "symmetric": true
+    },
+    {
+      "source": "INDI",
+      "destination": "STAR",
+      "site_path": [
+        "INDI",
+        "STAR"
+      ],
+      "links": [
+        "INDI__STAR"
+      ],
+      "modeled_one_way_latency_ms": 2.314,
+      "symmetric": true
+    },
+    {
+      "source": "INDI",
+      "destination": "TACC",
+      "site_path": [
+        "INDI",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "INDI__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 13.4572,
+      "symmetric": true
+    },
+    {
+      "source": "INDI",
+      "destination": "UCSD",
+      "site_path": [
+        "INDI",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "INDI__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 24.9575,
+      "symmetric": true
+    },
+    {
+      "source": "INDI",
+      "destination": "UTAH",
+      "site_path": [
+        "INDI",
+        "STAR",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "INDI__STAR",
+        "SALT__STAR",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 17.795,
+      "symmetric": true
+    },
+    {
+      "source": "INDI",
+      "destination": "WASH",
+      "site_path": [
+        "INDI",
+        "STAR",
+        "NEWY",
+        "WASH"
+      ],
+      "links": [
+        "INDI__STAR",
+        "NEWY__STAR",
+        "NEWY__WASH"
+      ],
+      "modeled_one_way_latency_ms": 15.7945,
+      "symmetric": true
+    },
+    {
+      "source": "KANS",
+      "destination": "LOSA",
+      "site_path": [
+        "KANS",
+        "SALT",
+        "LOSA"
+      ],
+      "links": [
+        "KANS__SALT",
+        "LOSA__SALT"
+      ],
+      "modeled_one_way_latency_ms": 16.0505,
+      "symmetric": true
+    },
+    {
+      "source": "KANS",
+      "destination": "MASS",
+      "site_path": [
+        "KANS",
+        "STAR",
+        "NEWY",
+        "MASS"
+      ],
+      "links": [
+        "KANS__STAR",
+        "NEWY__STAR",
+        "MASS__NEWY"
+      ],
+      "modeled_one_way_latency_ms": 17.857,
+      "symmetric": true
+    },
+    {
+      "source": "KANS",
+      "destination": "MAX",
+      "site_path": [
+        "KANS",
+        "DALL",
+        "ATLA",
+        "WASH",
+        "MAX"
+      ],
+      "links": [
+        "DALL__KANS",
+        "ATLA__DALL",
+        "ATLA__WASH",
+        "MAX__WASH"
+      ],
+      "modeled_one_way_latency_ms": 20.118,
+      "symmetric": true
+    },
+    {
+      "source": "KANS",
+      "destination": "MICH",
+      "site_path": [
+        "KANS",
+        "STAR",
+        "MICH"
+      ],
+      "links": [
+        "KANS__STAR",
+        "MICH__STAR"
+      ],
+      "modeled_one_way_latency_ms": 8.048,
+      "symmetric": true
+    },
+    {
+      "source": "KANS",
+      "destination": "NCSA",
+      "site_path": [
+        "KANS",
+        "STAR",
+        "NCSA"
+      ],
+      "links": [
+        "KANS__STAR",
+        "NCSA__STAR"
+      ],
+      "modeled_one_way_latency_ms": 6.733,
+      "symmetric": true
+    },
+    {
+      "source": "KANS",
+      "destination": "NEWY",
+      "site_path": [
+        "KANS",
+        "STAR",
+        "NEWY"
+      ],
+      "links": [
+        "KANS__STAR",
+        "NEWY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 16.4375,
+      "symmetric": true
+    },
+    {
+      "source": "KANS",
+      "destination": "PRIN",
+      "site_path": [
+        "KANS",
+        "STAR",
+        "NEWY",
+        "PRIN"
+      ],
+      "links": [
+        "KANS__STAR",
+        "NEWY__STAR",
+        "NEWY__PRIN"
+      ],
+      "modeled_one_way_latency_ms": 17.1045,
+      "symmetric": true
+    },
+    {
+      "source": "KANS",
+      "destination": "PSC",
+      "site_path": [
+        "KANS",
+        "DALL",
+        "ATLA",
+        "WASH",
+        "PSC"
+      ],
+      "links": [
+        "DALL__KANS",
+        "ATLA__DALL",
+        "ATLA__WASH",
+        "PSC__WASH"
+      ],
+      "modeled_one_way_latency_ms": 22.314,
+      "symmetric": true
+    },
+    {
+      "source": "KANS",
+      "destination": "RUTG",
+      "site_path": [
+        "KANS",
+        "STAR",
+        "NEWY",
+        "RUTG"
+      ],
+      "links": [
+        "KANS__STAR",
+        "NEWY__STAR",
+        "NEWY__RUTG"
+      ],
+      "modeled_one_way_latency_ms": 16.95,
+      "symmetric": true
+    },
+    {
+      "source": "KANS",
+      "destination": "SALT",
+      "site_path": [
+        "KANS",
+        "SALT"
+      ],
+      "links": [
+        "KANS__SALT"
+      ],
+      "modeled_one_way_latency_ms": 9.9295,
+      "symmetric": true
+    },
+    {
+      "source": "KANS",
+      "destination": "SEAT",
+      "site_path": [
+        "KANS",
+        "DALL",
+        "LOSA",
+        "SEAT"
+      ],
+      "links": [
+        "DALL__KANS",
+        "DALL__LOSA",
+        "LOSA__SEAT"
+      ],
+      "modeled_one_way_latency_ms": 34.3115,
+      "symmetric": true
+    },
+    {
+      "source": "KANS",
+      "destination": "SRI",
+      "site_path": [
+        "KANS",
+        "SALT",
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "KANS__SALT",
+        "LOSA__SALT",
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 20.119,
+      "symmetric": true
+    },
+    {
+      "source": "KANS",
+      "destination": "STAR",
+      "site_path": [
+        "KANS",
+        "STAR"
+      ],
+      "links": [
+        "KANS__STAR"
+      ],
+      "modeled_one_way_latency_ms": 5.4985,
+      "symmetric": true
+    },
+    {
+      "source": "KANS",
+      "destination": "TACC",
+      "site_path": [
+        "KANS",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "KANS__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 16.6417,
+      "symmetric": true
+    },
+    {
+      "source": "KANS",
+      "destination": "UCSD",
+      "site_path": [
+        "KANS",
+        "SALT",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "KANS__SALT",
+        "LOSA__SALT",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 17.199,
+      "symmetric": true
+    },
+    {
+      "source": "KANS",
+      "destination": "UTAH",
+      "site_path": [
+        "KANS",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "KANS__SALT",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 10.0365,
+      "symmetric": true
+    },
+    {
+      "source": "KANS",
+      "destination": "WASH",
+      "site_path": [
+        "KANS",
+        "DALL",
+        "ATLA",
+        "WASH"
+      ],
+      "links": [
+        "DALL__KANS",
+        "ATLA__DALL",
+        "ATLA__WASH"
+      ],
+      "modeled_one_way_latency_ms": 19.2475,
+      "symmetric": true
+    },
+    {
+      "source": "LOSA",
+      "destination": "MASS",
+      "site_path": [
+        "LOSA",
+        "SALT",
+        "STAR",
+        "NEWY",
+        "MASS"
+      ],
+      "links": [
+        "LOSA__SALT",
+        "SALT__STAR",
+        "NEWY__STAR",
+        "MASS__NEWY"
+      ],
+      "modeled_one_way_latency_ms": 33.8535,
+      "symmetric": true
+    },
+    {
+      "source": "LOSA",
+      "destination": "MAX",
+      "site_path": [
+        "LOSA",
+        "DALL",
+        "ATLA",
+        "WASH",
+        "MAX"
+      ],
+      "links": [
+        "DALL__LOSA",
+        "ATLA__DALL",
+        "ATLA__WASH",
+        "MAX__WASH"
+      ],
+      "modeled_one_way_latency_ms": 33.074,
+      "symmetric": true
+    },
+    {
+      "source": "LOSA",
+      "destination": "MICH",
+      "site_path": [
+        "LOSA",
+        "SALT",
+        "STAR",
+        "MICH"
+      ],
+      "links": [
+        "LOSA__SALT",
+        "SALT__STAR",
+        "MICH__STAR"
+      ],
+      "modeled_one_way_latency_ms": 24.0445,
+      "symmetric": true
+    },
+    {
+      "source": "LOSA",
+      "destination": "NCSA",
+      "site_path": [
+        "LOSA",
+        "SALT",
+        "STAR",
+        "NCSA"
+      ],
+      "links": [
+        "LOSA__SALT",
+        "SALT__STAR",
+        "NCSA__STAR"
+      ],
+      "modeled_one_way_latency_ms": 22.7295,
+      "symmetric": true
+    },
+    {
+      "source": "LOSA",
+      "destination": "NEWY",
+      "site_path": [
+        "LOSA",
+        "SALT",
+        "STAR",
+        "NEWY"
+      ],
+      "links": [
+        "LOSA__SALT",
+        "SALT__STAR",
+        "NEWY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 32.434,
+      "symmetric": true
+    },
+    {
+      "source": "LOSA",
+      "destination": "PRIN",
+      "site_path": [
+        "LOSA",
+        "SALT",
+        "STAR",
+        "NEWY",
+        "PRIN"
+      ],
+      "links": [
+        "LOSA__SALT",
+        "SALT__STAR",
+        "NEWY__STAR",
+        "NEWY__PRIN"
+      ],
+      "modeled_one_way_latency_ms": 33.101,
+      "symmetric": true
+    },
+    {
+      "source": "LOSA",
+      "destination": "PSC",
+      "site_path": [
+        "LOSA",
+        "DALL",
+        "ATLA",
+        "WASH",
+        "PSC"
+      ],
+      "links": [
+        "DALL__LOSA",
+        "ATLA__DALL",
+        "ATLA__WASH",
+        "PSC__WASH"
+      ],
+      "modeled_one_way_latency_ms": 35.27,
+      "symmetric": true
+    },
+    {
+      "source": "LOSA",
+      "destination": "RUTG",
+      "site_path": [
+        "LOSA",
+        "SALT",
+        "STAR",
+        "NEWY",
+        "RUTG"
+      ],
+      "links": [
+        "LOSA__SALT",
+        "SALT__STAR",
+        "NEWY__STAR",
+        "NEWY__RUTG"
+      ],
+      "modeled_one_way_latency_ms": 32.9465,
+      "symmetric": true
+    },
+    {
+      "source": "LOSA",
+      "destination": "SALT",
+      "site_path": [
+        "LOSA",
+        "SALT"
+      ],
+      "links": [
+        "LOSA__SALT"
+      ],
+      "modeled_one_way_latency_ms": 6.121,
+      "symmetric": true
+    },
+    {
+      "source": "LOSA",
+      "destination": "SEAT",
+      "site_path": [
+        "LOSA",
+        "SEAT"
+      ],
+      "links": [
+        "LOSA__SEAT"
+      ],
+      "modeled_one_way_latency_ms": 12.2785,
+      "symmetric": true
+    },
+    {
+      "source": "LOSA",
+      "destination": "SRI",
+      "site_path": [
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 4.0685,
+      "symmetric": true
+    },
+    {
+      "source": "LOSA",
+      "destination": "STAR",
+      "site_path": [
+        "LOSA",
+        "SALT",
+        "STAR"
+      ],
+      "links": [
+        "LOSA__SALT",
+        "SALT__STAR"
+      ],
+      "modeled_one_way_latency_ms": 21.495,
+      "symmetric": true
+    },
+    {
+      "source": "LOSA",
+      "destination": "TACC",
+      "site_path": [
+        "LOSA",
+        "SALT",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "LOSA__SALT",
+        "SALT__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 32.6382,
+      "symmetric": true
+    },
+    {
+      "source": "LOSA",
+      "destination": "UCSD",
+      "site_path": [
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 1.1485,
+      "symmetric": true
+    },
+    {
+      "source": "LOSA",
+      "destination": "UTAH",
+      "site_path": [
+        "LOSA",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "LOSA__SALT",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 6.228,
+      "symmetric": true
+    },
+    {
+      "source": "LOSA",
+      "destination": "WASH",
+      "site_path": [
+        "LOSA",
+        "DALL",
+        "ATLA",
+        "WASH"
+      ],
+      "links": [
+        "DALL__LOSA",
+        "ATLA__DALL",
+        "ATLA__WASH"
+      ],
+      "modeled_one_way_latency_ms": 32.2035,
+      "symmetric": true
+    },
+    {
+      "source": "MASS",
+      "destination": "MAX",
+      "site_path": [
+        "MASS",
+        "NEWY",
+        "WASH",
+        "MAX"
+      ],
+      "links": [
+        "MASS__NEWY",
+        "NEWY__WASH",
+        "MAX__WASH"
+      ],
+      "modeled_one_way_latency_ms": 4.8315,
+      "symmetric": true
+    },
+    {
+      "source": "MASS",
+      "destination": "MICH",
+      "site_path": [
+        "MASS",
+        "NEWY",
+        "STAR",
+        "MICH"
+      ],
+      "links": [
+        "MASS__NEWY",
+        "NEWY__STAR",
+        "MICH__STAR"
+      ],
+      "modeled_one_way_latency_ms": 14.908,
+      "symmetric": true
+    },
+    {
+      "source": "MASS",
+      "destination": "NCSA",
+      "site_path": [
+        "MASS",
+        "NEWY",
+        "STAR",
+        "NCSA"
+      ],
+      "links": [
+        "MASS__NEWY",
+        "NEWY__STAR",
+        "NCSA__STAR"
+      ],
+      "modeled_one_way_latency_ms": 13.593,
+      "symmetric": true
+    },
+    {
+      "source": "MASS",
+      "destination": "NEWY",
+      "site_path": [
+        "MASS",
+        "NEWY"
+      ],
+      "links": [
+        "MASS__NEWY"
+      ],
+      "modeled_one_way_latency_ms": 1.4195,
+      "symmetric": true
+    },
+    {
+      "source": "MASS",
+      "destination": "PRIN",
+      "site_path": [
+        "MASS",
+        "NEWY",
+        "PRIN"
+      ],
+      "links": [
+        "MASS__NEWY",
+        "NEWY__PRIN"
+      ],
+      "modeled_one_way_latency_ms": 2.0865,
+      "symmetric": true
+    },
+    {
+      "source": "MASS",
+      "destination": "PSC",
+      "site_path": [
+        "MASS",
+        "NEWY",
+        "WASH",
+        "PSC"
+      ],
+      "links": [
+        "MASS__NEWY",
+        "NEWY__WASH",
+        "PSC__WASH"
+      ],
+      "modeled_one_way_latency_ms": 7.0275,
+      "symmetric": true
+    },
+    {
+      "source": "MASS",
+      "destination": "RUTG",
+      "site_path": [
+        "MASS",
+        "NEWY",
+        "RUTG"
+      ],
+      "links": [
+        "MASS__NEWY",
+        "NEWY__RUTG"
+      ],
+      "modeled_one_way_latency_ms": 1.932,
+      "symmetric": true
+    },
+    {
+      "source": "MASS",
+      "destination": "SALT",
+      "site_path": [
+        "MASS",
+        "NEWY",
+        "STAR",
+        "SALT"
+      ],
+      "links": [
+        "MASS__NEWY",
+        "NEWY__STAR",
+        "SALT__STAR"
+      ],
+      "modeled_one_way_latency_ms": 27.7325,
+      "symmetric": true
+    },
+    {
+      "source": "MASS",
+      "destination": "SEAT",
+      "site_path": [
+        "MASS",
+        "NEWY",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "SEAT"
+      ],
+      "links": [
+        "MASS__NEWY",
+        "NEWY__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__SEAT"
+      ],
+      "modeled_one_way_latency_ms": 46.132,
+      "symmetric": true
+    },
+    {
+      "source": "MASS",
+      "destination": "SRI",
+      "site_path": [
+        "MASS",
+        "NEWY",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "MASS__NEWY",
+        "NEWY__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 37.922,
+      "symmetric": true
+    },
+    {
+      "source": "MASS",
+      "destination": "STAR",
+      "site_path": [
+        "MASS",
+        "NEWY",
+        "STAR"
+      ],
+      "links": [
+        "MASS__NEWY",
+        "NEWY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 12.3585,
+      "symmetric": true
+    },
+    {
+      "source": "MASS",
+      "destination": "TACC",
+      "site_path": [
+        "MASS",
+        "NEWY",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "MASS__NEWY",
+        "NEWY__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 23.5017,
+      "symmetric": true
+    },
+    {
+      "source": "MASS",
+      "destination": "UCSD",
+      "site_path": [
+        "MASS",
+        "NEWY",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "MASS__NEWY",
+        "NEWY__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 35.002,
+      "symmetric": true
+    },
+    {
+      "source": "MASS",
+      "destination": "UTAH",
+      "site_path": [
+        "MASS",
+        "NEWY",
+        "STAR",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "MASS__NEWY",
+        "NEWY__STAR",
+        "SALT__STAR",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 27.8395,
+      "symmetric": true
+    },
+    {
+      "source": "MASS",
+      "destination": "WASH",
+      "site_path": [
+        "MASS",
+        "NEWY",
+        "WASH"
+      ],
+      "links": [
+        "MASS__NEWY",
+        "NEWY__WASH"
+      ],
+      "modeled_one_way_latency_ms": 3.961,
+      "symmetric": true
+    },
+    {
+      "source": "MAX",
+      "destination": "MICH",
+      "site_path": [
+        "MAX",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "MICH"
+      ],
+      "links": [
+        "MAX__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "MICH__STAR"
+      ],
+      "modeled_one_way_latency_ms": 16.9005,
+      "symmetric": true
+    },
+    {
+      "source": "MAX",
+      "destination": "NCSA",
+      "site_path": [
+        "MAX",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "NCSA"
+      ],
+      "links": [
+        "MAX__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "NCSA__STAR"
+      ],
+      "modeled_one_way_latency_ms": 15.5855,
+      "symmetric": true
+    },
+    {
+      "source": "MAX",
+      "destination": "NEWY",
+      "site_path": [
+        "MAX",
+        "WASH",
+        "NEWY"
+      ],
+      "links": [
+        "MAX__WASH",
+        "NEWY__WASH"
+      ],
+      "modeled_one_way_latency_ms": 3.412,
+      "symmetric": true
+    },
+    {
+      "source": "MAX",
+      "destination": "PRIN",
+      "site_path": [
+        "MAX",
+        "WASH",
+        "NEWY",
+        "PRIN"
+      ],
+      "links": [
+        "MAX__WASH",
+        "NEWY__WASH",
+        "NEWY__PRIN"
+      ],
+      "modeled_one_way_latency_ms": 4.079,
+      "symmetric": true
+    },
+    {
+      "source": "MAX",
+      "destination": "PSC",
+      "site_path": [
+        "MAX",
+        "WASH",
+        "PSC"
+      ],
+      "links": [
+        "MAX__WASH",
+        "PSC__WASH"
+      ],
+      "modeled_one_way_latency_ms": 3.937,
+      "symmetric": true
+    },
+    {
+      "source": "MAX",
+      "destination": "RUTG",
+      "site_path": [
+        "MAX",
+        "WASH",
+        "NEWY",
+        "RUTG"
+      ],
+      "links": [
+        "MAX__WASH",
+        "NEWY__WASH",
+        "NEWY__RUTG"
+      ],
+      "modeled_one_way_latency_ms": 3.9245,
+      "symmetric": true
+    },
+    {
+      "source": "MAX",
+      "destination": "SALT",
+      "site_path": [
+        "MAX",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "SALT"
+      ],
+      "links": [
+        "MAX__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "SALT__STAR"
+      ],
+      "modeled_one_way_latency_ms": 29.725,
+      "symmetric": true
+    },
+    {
+      "source": "MAX",
+      "destination": "SEAT",
+      "site_path": [
+        "MAX",
+        "WASH",
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "SEAT"
+      ],
+      "links": [
+        "MAX__WASH",
+        "ATLA__WASH",
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "LOSA__SEAT"
+      ],
+      "modeled_one_way_latency_ms": 45.3525,
+      "symmetric": true
+    },
+    {
+      "source": "MAX",
+      "destination": "SRI",
+      "site_path": [
+        "MAX",
+        "WASH",
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "MAX__WASH",
+        "ATLA__WASH",
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 37.1425,
+      "symmetric": true
+    },
+    {
+      "source": "MAX",
+      "destination": "STAR",
+      "site_path": [
+        "MAX",
+        "WASH",
+        "NEWY",
+        "STAR"
+      ],
+      "links": [
+        "MAX__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 14.351,
+      "symmetric": true
+    },
+    {
+      "source": "MAX",
+      "destination": "TACC",
+      "site_path": [
+        "MAX",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "MAX__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 25.4942,
+      "symmetric": true
+    },
+    {
+      "source": "MAX",
+      "destination": "UCSD",
+      "site_path": [
+        "MAX",
+        "WASH",
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "MAX__WASH",
+        "ATLA__WASH",
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 34.2225,
+      "symmetric": true
+    },
+    {
+      "source": "MAX",
+      "destination": "UTAH",
+      "site_path": [
+        "MAX",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "MAX__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "SALT__STAR",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 29.832,
+      "symmetric": true
+    },
+    {
+      "source": "MAX",
+      "destination": "WASH",
+      "site_path": [
+        "MAX",
+        "WASH"
+      ],
+      "links": [
+        "MAX__WASH"
+      ],
+      "modeled_one_way_latency_ms": 0.8705,
+      "symmetric": true
+    },
+    {
+      "source": "MICH",
+      "destination": "NCSA",
+      "site_path": [
+        "MICH",
+        "STAR",
+        "NCSA"
+      ],
+      "links": [
+        "MICH__STAR",
+        "NCSA__STAR"
+      ],
+      "modeled_one_way_latency_ms": 3.784,
+      "symmetric": true
+    },
+    {
+      "source": "MICH",
+      "destination": "NEWY",
+      "site_path": [
+        "MICH",
+        "STAR",
+        "NEWY"
+      ],
+      "links": [
+        "MICH__STAR",
+        "NEWY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 13.4885,
+      "symmetric": true
+    },
+    {
+      "source": "MICH",
+      "destination": "PRIN",
+      "site_path": [
+        "MICH",
+        "STAR",
+        "NEWY",
+        "PRIN"
+      ],
+      "links": [
+        "MICH__STAR",
+        "NEWY__STAR",
+        "NEWY__PRIN"
+      ],
+      "modeled_one_way_latency_ms": 14.1555,
+      "symmetric": true
+    },
+    {
+      "source": "MICH",
+      "destination": "PSC",
+      "site_path": [
+        "MICH",
+        "STAR",
+        "NEWY",
+        "WASH",
+        "PSC"
+      ],
+      "links": [
+        "MICH__STAR",
+        "NEWY__STAR",
+        "NEWY__WASH",
+        "PSC__WASH"
+      ],
+      "modeled_one_way_latency_ms": 19.0965,
+      "symmetric": true
+    },
+    {
+      "source": "MICH",
+      "destination": "RUTG",
+      "site_path": [
+        "MICH",
+        "STAR",
+        "NEWY",
+        "RUTG"
+      ],
+      "links": [
+        "MICH__STAR",
+        "NEWY__STAR",
+        "NEWY__RUTG"
+      ],
+      "modeled_one_way_latency_ms": 14.001,
+      "symmetric": true
+    },
+    {
+      "source": "MICH",
+      "destination": "SALT",
+      "site_path": [
+        "MICH",
+        "STAR",
+        "SALT"
+      ],
+      "links": [
+        "MICH__STAR",
+        "SALT__STAR"
+      ],
+      "modeled_one_way_latency_ms": 17.9235,
+      "symmetric": true
+    },
+    {
+      "source": "MICH",
+      "destination": "SEAT",
+      "site_path": [
+        "MICH",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "SEAT"
+      ],
+      "links": [
+        "MICH__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__SEAT"
+      ],
+      "modeled_one_way_latency_ms": 36.323,
+      "symmetric": true
+    },
+    {
+      "source": "MICH",
+      "destination": "SRI",
+      "site_path": [
+        "MICH",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "MICH__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 28.113,
+      "symmetric": true
+    },
+    {
+      "source": "MICH",
+      "destination": "STAR",
+      "site_path": [
+        "MICH",
+        "STAR"
+      ],
+      "links": [
+        "MICH__STAR"
+      ],
+      "modeled_one_way_latency_ms": 2.5495,
+      "symmetric": true
+    },
+    {
+      "source": "MICH",
+      "destination": "TACC",
+      "site_path": [
+        "MICH",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "MICH__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 13.6927,
+      "symmetric": true
+    },
+    {
+      "source": "MICH",
+      "destination": "UCSD",
+      "site_path": [
+        "MICH",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "MICH__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 25.193,
+      "symmetric": true
+    },
+    {
+      "source": "MICH",
+      "destination": "UTAH",
+      "site_path": [
+        "MICH",
+        "STAR",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "MICH__STAR",
+        "SALT__STAR",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 18.0305,
+      "symmetric": true
+    },
+    {
+      "source": "MICH",
+      "destination": "WASH",
+      "site_path": [
+        "MICH",
+        "STAR",
+        "NEWY",
+        "WASH"
+      ],
+      "links": [
+        "MICH__STAR",
+        "NEWY__STAR",
+        "NEWY__WASH"
+      ],
+      "modeled_one_way_latency_ms": 16.03,
+      "symmetric": true
+    },
+    {
+      "source": "NCSA",
+      "destination": "NEWY",
+      "site_path": [
+        "NCSA",
+        "STAR",
+        "NEWY"
+      ],
+      "links": [
+        "NCSA__STAR",
+        "NEWY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 12.1735,
+      "symmetric": true
+    },
+    {
+      "source": "NCSA",
+      "destination": "PRIN",
+      "site_path": [
+        "NCSA",
+        "STAR",
+        "NEWY",
+        "PRIN"
+      ],
+      "links": [
+        "NCSA__STAR",
+        "NEWY__STAR",
+        "NEWY__PRIN"
+      ],
+      "modeled_one_way_latency_ms": 12.8405,
+      "symmetric": true
+    },
+    {
+      "source": "NCSA",
+      "destination": "PSC",
+      "site_path": [
+        "NCSA",
+        "STAR",
+        "NEWY",
+        "WASH",
+        "PSC"
+      ],
+      "links": [
+        "NCSA__STAR",
+        "NEWY__STAR",
+        "NEWY__WASH",
+        "PSC__WASH"
+      ],
+      "modeled_one_way_latency_ms": 17.7815,
+      "symmetric": true
+    },
+    {
+      "source": "NCSA",
+      "destination": "RUTG",
+      "site_path": [
+        "NCSA",
+        "STAR",
+        "NEWY",
+        "RUTG"
+      ],
+      "links": [
+        "NCSA__STAR",
+        "NEWY__STAR",
+        "NEWY__RUTG"
+      ],
+      "modeled_one_way_latency_ms": 12.686,
+      "symmetric": true
+    },
+    {
+      "source": "NCSA",
+      "destination": "SALT",
+      "site_path": [
+        "NCSA",
+        "STAR",
+        "SALT"
+      ],
+      "links": [
+        "NCSA__STAR",
+        "SALT__STAR"
+      ],
+      "modeled_one_way_latency_ms": 16.6085,
+      "symmetric": true
+    },
+    {
+      "source": "NCSA",
+      "destination": "SEAT",
+      "site_path": [
+        "NCSA",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "SEAT"
+      ],
+      "links": [
+        "NCSA__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__SEAT"
+      ],
+      "modeled_one_way_latency_ms": 35.008,
+      "symmetric": true
+    },
+    {
+      "source": "NCSA",
+      "destination": "SRI",
+      "site_path": [
+        "NCSA",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "NCSA__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 26.798,
+      "symmetric": true
+    },
+    {
+      "source": "NCSA",
+      "destination": "STAR",
+      "site_path": [
+        "NCSA",
+        "STAR"
+      ],
+      "links": [
+        "NCSA__STAR"
+      ],
+      "modeled_one_way_latency_ms": 1.2345,
+      "symmetric": true
+    },
+    {
+      "source": "NCSA",
+      "destination": "TACC",
+      "site_path": [
+        "NCSA",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "NCSA__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 12.3777,
+      "symmetric": true
+    },
+    {
+      "source": "NCSA",
+      "destination": "UCSD",
+      "site_path": [
+        "NCSA",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "NCSA__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 23.878,
+      "symmetric": true
+    },
+    {
+      "source": "NCSA",
+      "destination": "UTAH",
+      "site_path": [
+        "NCSA",
+        "STAR",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "NCSA__STAR",
+        "SALT__STAR",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 16.7155,
+      "symmetric": true
+    },
+    {
+      "source": "NCSA",
+      "destination": "WASH",
+      "site_path": [
+        "NCSA",
+        "STAR",
+        "NEWY",
+        "WASH"
+      ],
+      "links": [
+        "NCSA__STAR",
+        "NEWY__STAR",
+        "NEWY__WASH"
+      ],
+      "modeled_one_way_latency_ms": 14.715,
+      "symmetric": true
+    },
+    {
+      "source": "NEWY",
+      "destination": "PRIN",
+      "site_path": [
+        "NEWY",
+        "PRIN"
+      ],
+      "links": [
+        "NEWY__PRIN"
+      ],
+      "modeled_one_way_latency_ms": 0.667,
+      "symmetric": true
+    },
+    {
+      "source": "NEWY",
+      "destination": "PSC",
+      "site_path": [
+        "NEWY",
+        "WASH",
+        "PSC"
+      ],
+      "links": [
+        "NEWY__WASH",
+        "PSC__WASH"
+      ],
+      "modeled_one_way_latency_ms": 5.608,
+      "symmetric": true
+    },
+    {
+      "source": "NEWY",
+      "destination": "RUTG",
+      "site_path": [
+        "NEWY",
+        "RUTG"
+      ],
+      "links": [
+        "NEWY__RUTG"
+      ],
+      "modeled_one_way_latency_ms": 0.5125,
+      "symmetric": true
+    },
+    {
+      "source": "NEWY",
+      "destination": "SALT",
+      "site_path": [
+        "NEWY",
+        "STAR",
+        "SALT"
+      ],
+      "links": [
+        "NEWY__STAR",
+        "SALT__STAR"
+      ],
+      "modeled_one_way_latency_ms": 26.313,
+      "symmetric": true
+    },
+    {
+      "source": "NEWY",
+      "destination": "SEAT",
+      "site_path": [
+        "NEWY",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "SEAT"
+      ],
+      "links": [
+        "NEWY__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__SEAT"
+      ],
+      "modeled_one_way_latency_ms": 44.7125,
+      "symmetric": true
+    },
+    {
+      "source": "NEWY",
+      "destination": "SRI",
+      "site_path": [
+        "NEWY",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "NEWY__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 36.5025,
+      "symmetric": true
+    },
+    {
+      "source": "NEWY",
+      "destination": "STAR",
+      "site_path": [
+        "NEWY",
+        "STAR"
+      ],
+      "links": [
+        "NEWY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 10.939,
+      "symmetric": true
+    },
+    {
+      "source": "NEWY",
+      "destination": "TACC",
+      "site_path": [
+        "NEWY",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "NEWY__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 22.0822,
+      "symmetric": true
+    },
+    {
+      "source": "NEWY",
+      "destination": "UCSD",
+      "site_path": [
+        "NEWY",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "NEWY__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 33.5825,
+      "symmetric": true
+    },
+    {
+      "source": "NEWY",
+      "destination": "UTAH",
+      "site_path": [
+        "NEWY",
+        "STAR",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "NEWY__STAR",
+        "SALT__STAR",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 26.42,
+      "symmetric": true
+    },
+    {
+      "source": "NEWY",
+      "destination": "WASH",
+      "site_path": [
+        "NEWY",
+        "WASH"
+      ],
+      "links": [
+        "NEWY__WASH"
+      ],
+      "modeled_one_way_latency_ms": 2.5415,
+      "symmetric": true
+    },
+    {
+      "source": "PRIN",
+      "destination": "PSC",
+      "site_path": [
+        "PRIN",
+        "NEWY",
+        "WASH",
+        "PSC"
+      ],
+      "links": [
+        "NEWY__PRIN",
+        "NEWY__WASH",
+        "PSC__WASH"
+      ],
+      "modeled_one_way_latency_ms": 6.275,
+      "symmetric": true
+    },
+    {
+      "source": "PRIN",
+      "destination": "RUTG",
+      "site_path": [
+        "PRIN",
+        "NEWY",
+        "RUTG"
+      ],
+      "links": [
+        "NEWY__PRIN",
+        "NEWY__RUTG"
+      ],
+      "modeled_one_way_latency_ms": 1.1795,
+      "symmetric": true
+    },
+    {
+      "source": "PRIN",
+      "destination": "SALT",
+      "site_path": [
+        "PRIN",
+        "NEWY",
+        "STAR",
+        "SALT"
+      ],
+      "links": [
+        "NEWY__PRIN",
+        "NEWY__STAR",
+        "SALT__STAR"
+      ],
+      "modeled_one_way_latency_ms": 26.98,
+      "symmetric": true
+    },
+    {
+      "source": "PRIN",
+      "destination": "SEAT",
+      "site_path": [
+        "PRIN",
+        "NEWY",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "SEAT"
+      ],
+      "links": [
+        "NEWY__PRIN",
+        "NEWY__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__SEAT"
+      ],
+      "modeled_one_way_latency_ms": 45.3795,
+      "symmetric": true
+    },
+    {
+      "source": "PRIN",
+      "destination": "SRI",
+      "site_path": [
+        "PRIN",
+        "NEWY",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "NEWY__PRIN",
+        "NEWY__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 37.1695,
+      "symmetric": true
+    },
+    {
+      "source": "PRIN",
+      "destination": "STAR",
+      "site_path": [
+        "PRIN",
+        "NEWY",
+        "STAR"
+      ],
+      "links": [
+        "NEWY__PRIN",
+        "NEWY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 11.606,
+      "symmetric": true
+    },
+    {
+      "source": "PRIN",
+      "destination": "TACC",
+      "site_path": [
+        "PRIN",
+        "NEWY",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "NEWY__PRIN",
+        "NEWY__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 22.7492,
+      "symmetric": true
+    },
+    {
+      "source": "PRIN",
+      "destination": "UCSD",
+      "site_path": [
+        "PRIN",
+        "NEWY",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "NEWY__PRIN",
+        "NEWY__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 34.2495,
+      "symmetric": true
+    },
+    {
+      "source": "PRIN",
+      "destination": "UTAH",
+      "site_path": [
+        "PRIN",
+        "NEWY",
+        "STAR",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "NEWY__PRIN",
+        "NEWY__STAR",
+        "SALT__STAR",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 27.087,
+      "symmetric": true
+    },
+    {
+      "source": "PRIN",
+      "destination": "WASH",
+      "site_path": [
+        "PRIN",
+        "NEWY",
+        "WASH"
+      ],
+      "links": [
+        "NEWY__PRIN",
+        "NEWY__WASH"
+      ],
+      "modeled_one_way_latency_ms": 3.2085,
+      "symmetric": true
+    },
+    {
+      "source": "PSC",
+      "destination": "RUTG",
+      "site_path": [
+        "PSC",
+        "WASH",
+        "NEWY",
+        "RUTG"
+      ],
+      "links": [
+        "PSC__WASH",
+        "NEWY__WASH",
+        "NEWY__RUTG"
+      ],
+      "modeled_one_way_latency_ms": 6.1205,
+      "symmetric": true
+    },
+    {
+      "source": "PSC",
+      "destination": "SALT",
+      "site_path": [
+        "PSC",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "SALT"
+      ],
+      "links": [
+        "PSC__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "SALT__STAR"
+      ],
+      "modeled_one_way_latency_ms": 31.921,
+      "symmetric": true
+    },
+    {
+      "source": "PSC",
+      "destination": "SEAT",
+      "site_path": [
+        "PSC",
+        "WASH",
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "SEAT"
+      ],
+      "links": [
+        "PSC__WASH",
+        "ATLA__WASH",
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "LOSA__SEAT"
+      ],
+      "modeled_one_way_latency_ms": 47.5485,
+      "symmetric": true
+    },
+    {
+      "source": "PSC",
+      "destination": "SRI",
+      "site_path": [
+        "PSC",
+        "WASH",
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "PSC__WASH",
+        "ATLA__WASH",
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 39.3385,
+      "symmetric": true
+    },
+    {
+      "source": "PSC",
+      "destination": "STAR",
+      "site_path": [
+        "PSC",
+        "WASH",
+        "NEWY",
+        "STAR"
+      ],
+      "links": [
+        "PSC__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 16.547,
+      "symmetric": true
+    },
+    {
+      "source": "PSC",
+      "destination": "TACC",
+      "site_path": [
+        "PSC",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "PSC__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 27.6902,
+      "symmetric": true
+    },
+    {
+      "source": "PSC",
+      "destination": "UCSD",
+      "site_path": [
+        "PSC",
+        "WASH",
+        "ATLA",
+        "DALL",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "PSC__WASH",
+        "ATLA__WASH",
+        "ATLA__DALL",
+        "DALL__LOSA",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 36.4185,
+      "symmetric": true
+    },
+    {
+      "source": "PSC",
+      "destination": "UTAH",
+      "site_path": [
+        "PSC",
+        "WASH",
+        "NEWY",
+        "STAR",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "PSC__WASH",
+        "NEWY__WASH",
+        "NEWY__STAR",
+        "SALT__STAR",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 32.028,
+      "symmetric": true
+    },
+    {
+      "source": "PSC",
+      "destination": "WASH",
+      "site_path": [
+        "PSC",
+        "WASH"
+      ],
+      "links": [
+        "PSC__WASH"
+      ],
+      "modeled_one_way_latency_ms": 3.0665,
+      "symmetric": true
+    },
+    {
+      "source": "RUTG",
+      "destination": "SALT",
+      "site_path": [
+        "RUTG",
+        "NEWY",
+        "STAR",
+        "SALT"
+      ],
+      "links": [
+        "NEWY__RUTG",
+        "NEWY__STAR",
+        "SALT__STAR"
+      ],
+      "modeled_one_way_latency_ms": 26.8255,
+      "symmetric": true
+    },
+    {
+      "source": "RUTG",
+      "destination": "SEAT",
+      "site_path": [
+        "RUTG",
+        "NEWY",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "SEAT"
+      ],
+      "links": [
+        "NEWY__RUTG",
+        "NEWY__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__SEAT"
+      ],
+      "modeled_one_way_latency_ms": 45.225,
+      "symmetric": true
+    },
+    {
+      "source": "RUTG",
+      "destination": "SRI",
+      "site_path": [
+        "RUTG",
+        "NEWY",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "NEWY__RUTG",
+        "NEWY__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 37.015,
+      "symmetric": true
+    },
+    {
+      "source": "RUTG",
+      "destination": "STAR",
+      "site_path": [
+        "RUTG",
+        "NEWY",
+        "STAR"
+      ],
+      "links": [
+        "NEWY__RUTG",
+        "NEWY__STAR"
+      ],
+      "modeled_one_way_latency_ms": 11.4515,
+      "symmetric": true
+    },
+    {
+      "source": "RUTG",
+      "destination": "TACC",
+      "site_path": [
+        "RUTG",
+        "NEWY",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "NEWY__RUTG",
+        "NEWY__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 22.5947,
+      "symmetric": true
+    },
+    {
+      "source": "RUTG",
+      "destination": "UCSD",
+      "site_path": [
+        "RUTG",
+        "NEWY",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "NEWY__RUTG",
+        "NEWY__STAR",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 34.095,
+      "symmetric": true
+    },
+    {
+      "source": "RUTG",
+      "destination": "UTAH",
+      "site_path": [
+        "RUTG",
+        "NEWY",
+        "STAR",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "NEWY__RUTG",
+        "NEWY__STAR",
+        "SALT__STAR",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 26.9325,
+      "symmetric": true
+    },
+    {
+      "source": "RUTG",
+      "destination": "WASH",
+      "site_path": [
+        "RUTG",
+        "NEWY",
+        "WASH"
+      ],
+      "links": [
+        "NEWY__RUTG",
+        "NEWY__WASH"
+      ],
+      "modeled_one_way_latency_ms": 3.054,
+      "symmetric": true
+    },
+    {
+      "source": "SALT",
+      "destination": "SEAT",
+      "site_path": [
+        "SALT",
+        "LOSA",
+        "SEAT"
+      ],
+      "links": [
+        "LOSA__SALT",
+        "LOSA__SEAT"
+      ],
+      "modeled_one_way_latency_ms": 18.3995,
+      "symmetric": true
+    },
+    {
+      "source": "SALT",
+      "destination": "SRI",
+      "site_path": [
+        "SALT",
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "LOSA__SALT",
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 10.1895,
+      "symmetric": true
+    },
+    {
+      "source": "SALT",
+      "destination": "STAR",
+      "site_path": [
+        "SALT",
+        "STAR"
+      ],
+      "links": [
+        "SALT__STAR"
+      ],
+      "modeled_one_way_latency_ms": 15.374,
+      "symmetric": true
+    },
+    {
+      "source": "SALT",
+      "destination": "TACC",
+      "site_path": [
+        "SALT",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "SALT__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 26.5172,
+      "symmetric": true
+    },
+    {
+      "source": "SALT",
+      "destination": "UCSD",
+      "site_path": [
+        "SALT",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "LOSA__SALT",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 7.2695,
+      "symmetric": true
+    },
+    {
+      "source": "SALT",
+      "destination": "UTAH",
+      "site_path": [
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 0.107,
+      "symmetric": true
+    },
+    {
+      "source": "SALT",
+      "destination": "WASH",
+      "site_path": [
+        "SALT",
+        "STAR",
+        "NEWY",
+        "WASH"
+      ],
+      "links": [
+        "SALT__STAR",
+        "NEWY__STAR",
+        "NEWY__WASH"
+      ],
+      "modeled_one_way_latency_ms": 28.8545,
+      "symmetric": true
+    },
+    {
+      "source": "SEAT",
+      "destination": "SRI",
+      "site_path": [
+        "SEAT",
+        "LOSA",
+        "SRI"
+      ],
+      "links": [
+        "LOSA__SEAT",
+        "LOSA__SRI"
+      ],
+      "modeled_one_way_latency_ms": 16.347,
+      "symmetric": true
+    },
+    {
+      "source": "SEAT",
+      "destination": "STAR",
+      "site_path": [
+        "SEAT",
+        "LOSA",
+        "SALT",
+        "STAR"
+      ],
+      "links": [
+        "LOSA__SEAT",
+        "LOSA__SALT",
+        "SALT__STAR"
+      ],
+      "modeled_one_way_latency_ms": 33.7735,
+      "symmetric": true
+    },
+    {
+      "source": "SEAT",
+      "destination": "TACC",
+      "site_path": [
+        "SEAT",
+        "LOSA",
+        "SALT",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "LOSA__SEAT",
+        "LOSA__SALT",
+        "SALT__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 44.9167,
+      "symmetric": true
+    },
+    {
+      "source": "SEAT",
+      "destination": "UCSD",
+      "site_path": [
+        "SEAT",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "LOSA__SEAT",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 13.427,
+      "symmetric": true
+    },
+    {
+      "source": "SEAT",
+      "destination": "UTAH",
+      "site_path": [
+        "SEAT",
+        "LOSA",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "LOSA__SEAT",
+        "LOSA__SALT",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 18.5065,
+      "symmetric": true
+    },
+    {
+      "source": "SEAT",
+      "destination": "WASH",
+      "site_path": [
+        "SEAT",
+        "LOSA",
+        "DALL",
+        "ATLA",
+        "WASH"
+      ],
+      "links": [
+        "LOSA__SEAT",
+        "DALL__LOSA",
+        "ATLA__DALL",
+        "ATLA__WASH"
+      ],
+      "modeled_one_way_latency_ms": 44.482,
+      "symmetric": true
+    },
+    {
+      "source": "SRI",
+      "destination": "STAR",
+      "site_path": [
+        "SRI",
+        "LOSA",
+        "SALT",
+        "STAR"
+      ],
+      "links": [
+        "LOSA__SRI",
+        "LOSA__SALT",
+        "SALT__STAR"
+      ],
+      "modeled_one_way_latency_ms": 25.5635,
+      "symmetric": true
+    },
+    {
+      "source": "SRI",
+      "destination": "TACC",
+      "site_path": [
+        "SRI",
+        "LOSA",
+        "SALT",
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "LOSA__SRI",
+        "LOSA__SALT",
+        "SALT__STAR",
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 36.7067,
+      "symmetric": true
+    },
+    {
+      "source": "SRI",
+      "destination": "UCSD",
+      "site_path": [
+        "SRI",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "LOSA__SRI",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 5.217,
+      "symmetric": true
+    },
+    {
+      "source": "SRI",
+      "destination": "UTAH",
+      "site_path": [
+        "SRI",
+        "LOSA",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "LOSA__SRI",
+        "LOSA__SALT",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 10.2965,
+      "symmetric": true
+    },
+    {
+      "source": "SRI",
+      "destination": "WASH",
+      "site_path": [
+        "SRI",
+        "LOSA",
+        "DALL",
+        "ATLA",
+        "WASH"
+      ],
+      "links": [
+        "LOSA__SRI",
+        "DALL__LOSA",
+        "ATLA__DALL",
+        "ATLA__WASH"
+      ],
+      "modeled_one_way_latency_ms": 36.272,
+      "symmetric": true
+    },
+    {
+      "source": "STAR",
+      "destination": "TACC",
+      "site_path": [
+        "STAR",
+        "TACC"
+      ],
+      "links": [
+        "STAR__TACC"
+      ],
+      "modeled_one_way_latency_ms": 11.1432,
+      "symmetric": true
+    },
+    {
+      "source": "STAR",
+      "destination": "UCSD",
+      "site_path": [
+        "STAR",
+        "SALT",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 22.6435,
+      "symmetric": true
+    },
+    {
+      "source": "STAR",
+      "destination": "UTAH",
+      "site_path": [
+        "STAR",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "SALT__STAR",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 15.481,
+      "symmetric": true
+    },
+    {
+      "source": "STAR",
+      "destination": "WASH",
+      "site_path": [
+        "STAR",
+        "NEWY",
+        "WASH"
+      ],
+      "links": [
+        "NEWY__STAR",
+        "NEWY__WASH"
+      ],
+      "modeled_one_way_latency_ms": 13.4805,
+      "symmetric": true
+    },
+    {
+      "source": "TACC",
+      "destination": "UCSD",
+      "site_path": [
+        "TACC",
+        "STAR",
+        "SALT",
+        "LOSA",
+        "UCSD"
+      ],
+      "links": [
+        "STAR__TACC",
+        "SALT__STAR",
+        "LOSA__SALT",
+        "LOSA__UCSD"
+      ],
+      "modeled_one_way_latency_ms": 33.7867,
+      "symmetric": true
+    },
+    {
+      "source": "TACC",
+      "destination": "UTAH",
+      "site_path": [
+        "TACC",
+        "STAR",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "STAR__TACC",
+        "SALT__STAR",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 26.6242,
+      "symmetric": true
+    },
+    {
+      "source": "TACC",
+      "destination": "WASH",
+      "site_path": [
+        "TACC",
+        "STAR",
+        "NEWY",
+        "WASH"
+      ],
+      "links": [
+        "STAR__TACC",
+        "NEWY__STAR",
+        "NEWY__WASH"
+      ],
+      "modeled_one_way_latency_ms": 24.6237,
+      "symmetric": true
+    },
+    {
+      "source": "UCSD",
+      "destination": "UTAH",
+      "site_path": [
+        "UCSD",
+        "LOSA",
+        "SALT",
+        "UTAH"
+      ],
+      "links": [
+        "LOSA__UCSD",
+        "LOSA__SALT",
+        "SALT__UTAH"
+      ],
+      "modeled_one_way_latency_ms": 7.3765,
+      "symmetric": true
+    },
+    {
+      "source": "UCSD",
+      "destination": "WASH",
+      "site_path": [
+        "UCSD",
+        "LOSA",
+        "DALL",
+        "ATLA",
+        "WASH"
+      ],
+      "links": [
+        "LOSA__UCSD",
+        "DALL__LOSA",
+        "ATLA__DALL",
+        "ATLA__WASH"
+      ],
+      "modeled_one_way_latency_ms": 33.352,
+      "symmetric": true
+    },
+    {
+      "source": "UTAH",
+      "destination": "WASH",
+      "site_path": [
+        "UTAH",
+        "SALT",
+        "STAR",
+        "NEWY",
+        "WASH"
+      ],
+      "links": [
+        "SALT__UTAH",
+        "SALT__STAR",
+        "NEWY__STAR",
+        "NEWY__WASH"
+      ],
+      "modeled_one_way_latency_ms": 28.9615,
+      "symmetric": true
+    }
+  ],
+  "excluded_physical_links": [
+    {
+      "source": "ATLA",
+      "destination": "STAR",
+      "nominal_bandwidth_gbps": 100,
+      "observed_one_way_ms": 19.7765,
+      "observed_sites_on_path": 4,
+      "reason": "Physical FABRIC link is not used directly by FABNetv4; traffic is routed through other sites."
+    },
+    {
+      "source": "SALT",
+      "destination": "SEAT",
+      "nominal_bandwidth_gbps": 100,
+      "observed_one_way_ms": 18.369,
+      "observed_sites_on_path": 3,
+      "reason": "Physical FABRIC link is not used directly by FABNetv4; traffic is routed through other sites."
+    },
+    {
+      "source": "STAR",
+      "destination": "WASH",
+      "nominal_bandwidth_gbps": 100,
+      "observed_one_way_ms": 13.4385,
+      "observed_sites_on_path": 3,
+      "reason": "Physical FABRIC link is not used directly by FABNetv4; traffic is routed through other sites."
+    }
+  ],
+  "validation": {
+    "site_count": 28,
+    "modeled_direct_link_count": 31,
+    "route_count": 378,
+    "expected_all_pairs_route_count": 378,
+    "unreachable_pairs": [],
+    "latency_sources": {
+      "measured": 27,
+      "estimated": 3,
+      "colocated": 1
+    }
+  }
+}
